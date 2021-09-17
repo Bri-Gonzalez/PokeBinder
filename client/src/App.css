@@ -2,6 +2,37 @@
   text-align: center;
 }
 
+.top-nav {
+  background-color: #ff4e4a;
+  height: 35px;
+  display: flex;
+  margin-top: 8px;
+}
+
+.inline-nav {
+  display: inline-flex;
+}
+
+.home-title {
+  background-color: #ff4e4a;
+  color: white;
+  width: 350px;
+  margin: 30px auto;
+  border-radius: 20px;
+  font-family: "itim", sans-serif;
+  font-size: 45px;
+}
+
+.details-title {
+  background-color: #ff4e4a;
+  color: white;
+  width: 350px;
+  margin: 30px auto;
+  border-radius: 20px;
+  font-family: "itim", sans-serif;
+  font-size: 25px;
+}
+
 .card-container {
   display: inline-flex;
 }

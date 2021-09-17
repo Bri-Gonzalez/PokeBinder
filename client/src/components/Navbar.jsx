@@ -2,16 +2,16 @@ import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
-    <nav>
-      <div>
+    <div className="top-nav" >
+      <div className="inline-nav">
         <div>
-          Logo
+          PokéApps
         </div>
         <div>
           <Link to="/">Home</Link>
         </div>
       </div>
-    </nav>
+    </div>
   )
 }
 

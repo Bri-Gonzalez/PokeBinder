@@ -14,6 +14,7 @@ function Home() {
 
   return (
     <div>
+      <h1 class="home-title">PokéBinder</h1>
       <div>
         {cardTitles.map(title => {
           return (

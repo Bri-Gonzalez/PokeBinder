@@ -18,7 +18,7 @@ function CardDetails() {
 
   return (
     <div>
-      <h1>{card?.fields?.title}</h1>
+      <h1 className="details-title">{card?.fields?.title}</h1>
       <div className="card-container">
         <div className="card-image-container">
           <img src={card?.fields?.image} alt={card?.fields?.title} />
