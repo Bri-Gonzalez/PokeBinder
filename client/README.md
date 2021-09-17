@@ -21,20 +21,19 @@ Show your component hierarchy here! Use [this](https://cms-assets.tutsplus.com/u
 Show us a snippet of JSON returned by your Airtable (you can find it under the API documentation) so we know you can access it and get the info you need. This **must** be properly formatted. An example is below:
 
 ```json
-{
-"records": [
+'{
+  "records": [
     {
       "fields": {
-        "name": "Pikachu V",
+        "title": "Pikachu V",
         "date": "11/2020",
         "obtained": "purchased",
         "type": "lightning",
-        "description": "I got this card because I loved the determined face on Pikachu.",
-        "image": "https://assets.pokemon.com/assets/cms2/img/cards/web/SWSH4/SWSH4_EN_170.png"
+        "description": "I bought this cards solely for the determined Pikachu face. ",
+        "image": "https://assets.pokemon.com/assets/cms2/img/cards/web/SWSH4/SWSH4_EN_170.png",
+        "name": "Pikachu"
       }
     },
-  ]
-}'
 ```
 
 ### MVP/PostMVP
