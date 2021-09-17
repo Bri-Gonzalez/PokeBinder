@@ -1,3 +1,15 @@
 .App {
   text-align: center;
 }
+
+.card-container {
+  display: inline-flex;
+}
+
+.card-image-container img {
+  height: 300px;
+}
+
+.name-type-container {
+  display: inline-flex;
+}

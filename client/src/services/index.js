@@ -13,3 +13,8 @@ export const fetchCardTitles = async () => {
   const res = await axios.get(URL, config);
   return res.data.records;
 }
+
+export const fetchCardDetails = async (id) => {
+  const res = await axios.get(`${URL}/${id}`, config);
+  return res.data;
+}

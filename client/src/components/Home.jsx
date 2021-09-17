@@ -1,16 +1,6 @@
-// import axios from "axios";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { fetchCardTitles } from "../services";
-
-// const airtableBase = process.env.REACT_APP_AIRTABLE_BASE;
-// const airtableKey = process.env.REACT_APP_AIRTABLE_KEY;
-// const URL = `https://api.airtable.com/v0/${airtableBase}/Binder`;
-// const config = {
-//   headers: {
-//     Authorization: `Bearer ${airtableKey}`,
-//   }
-// };
 
 function Home() {
   const [cardTitles, setCardTitles] = useState([]);
