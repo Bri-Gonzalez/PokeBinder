@@ -1,70 +1,86 @@
-# Getting Started with Create React App
+# Project Overview
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project Name
 
-## Available Scripts
+PokéBinder
 
-In the project directory, you can run:
+## Project Description
 
-### `npm start`
+This app will allow the user to upload their favorite Pokémon cards to a virtual binder. The user will be able to add Pokémon cards, edit their Pokémon cards, and delete their Pokémon cards. This allows the user to easily share out their collection with friends, family, and ultimately, whoever they want.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Wireframes
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Upload images of your wireframes to an image hosting site or add them to an assets folder in your repo and link them here with a description of each specific wireframe.
 
-### `npm test`
+## Component Hierarchy
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Show your component hierarchy here! Use [this](https://cms-assets.tutsplus.com/uploads/users/1795/posts/30352/image/GettingStartedWithReduxTutorial-React-Component-Structure.png) as an example.
 
-### `npm run build`
+## API and Data Sample
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Show us a snippet of JSON returned by your Airtable (you can find it under the API documentation) so we know you can access it and get the info you need. This **must** be properly formatted. An example is below:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```json
+{
+"records": [
+    {
+      "fields": {
+        "name": "Pikachu V",
+        "date": "11/2020",
+        "obtained": "purchased",
+        "type": "lightning",
+        "description": "I got this card because I loved the determined face on Pikachu.",
+        "image": "https://assets.pokemon.com/assets/cms2/img/cards/web/SWSH4/SWSH4_EN_170.png"
+      }
+    },
+  ]
+}'
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### MVP/PostMVP
 
-### `npm run eject`
+#### MVP
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+_These are examples only. Replace with your own MVP features._
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Find and use external api
+- Render data on page
+- Allow user to choose favorites
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+#### PostMVP
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+_These are examples only. Replace with your own Post-MVP features._
 
-## Learn More
+- Add second API
+- Use local storage to save user favorites
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Project Schedule
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+This schedule will be used to keep track of your progress throughout the week and align with our expectations. Here's an example.
 
-### Code Splitting
+| Day      | Deliverable                                                   | Status     |
+| -------- | ------------------------------------------------------------- | ---------- |
+| Sept. 16 | Prompt / Wireframes / Project Approval                        | Complete   |
+| Sept. 17 | Component Hierarchy / Timeframes / Core Application Structure | Incomplete |
+| Sept. 20 | Pseudocode / Actual Code                                      | Incomplete |
+| Sept. 21 | Initial Clickable Model                                       | Incomplete |
+| Sept. 22 | CSS Styling                                                   | Incomplete |
+| Sept. 23 | Complete MVP                                                  | Incomplete |
+| Sept. 24 | Presentations                                                 | Incomplete |
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Timeframes
 
-### Analyzing the Bundle Size
+| Component             | Priority | Estimated Time | Time Invested | Actual Time |
+| --------------------- | :------: | :------------: | :-----------: | :---------: |
+| Setting up Components |    H     |      1hr       |      --       |     --      |
+| Total                 |    H     |      1hrs      |      --       |     --      |
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## SWOT Analysis
 
-### Making a Progressive Web App
+### Strengths:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Weaknesses:
 
-### Advanced Configuration
+### Opportunities:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Threats:
