@@ -14,19 +14,19 @@ import { Route } from "react-router-dom";
 function App() {
   return (
     <div className="App">
-      <Navbar />
+      {/* <Navbar /> */}
       <Route>
         <Home />
       </Route>
-      <Route>
+      <Route path = "/details/:id">
         <CardDetails />
       </Route>
-      <Route>
+      {/* <Route>
         <AddCard />
-      </Route>
-      <Route>
+      </Route> */}
+      {/* <Route>
         <EditCard />
-      </Route>
+      </Route> */}
     </div>
   );
 }
