@@ -1,8 +1,6 @@
 # Project Overview
 
-## Project Name
-
-PokéBinder
+## PokéBinder
 
 ## Project Description
 
@@ -10,11 +8,11 @@ This app will allow the user to upload their favorite Pokémon cards to a virtua
 
 ## Wireframes
 
-Upload images of your wireframes to an image hosting site or add them to an assets folder in your repo and link them here with a description of each specific wireframe.
+[Wireframes](https://whimsical.com/pokebinder-xFDxtwiLXAYUroyLqfZZP)
 
 ## Component Hierarchy
 
-Show your component hierarchy here! Use [this](https://cms-assets.tutsplus.com/uploads/users/1795/posts/30352/image/GettingStartedWithReduxTutorial-React-Component-Structure.png) as an example.
+[Component Hierarchy](https://whimsical.com/pokebinder-xFDxtwiLXAYUroyLqfZZP)
 
 ## API and Data Sample
 
