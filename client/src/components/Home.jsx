@@ -24,9 +24,11 @@ function Home() {
           );
         })}
       </div>
-      <button className="plus-button">
-        <img src="https://res.cloudinary.com/dfryxohde/image/upload/v1632149072/Plus-Silhouette-Transparent_ohdn5y.png" nav="add a pokemon card" />
-      </button>
+      <Link to="/add">
+        <button className="plus-button">
+          <img src="https://res.cloudinary.com/dfryxohde/image/upload/v1632149072/Plus-Silhouette-Transparent_ohdn5y.png" nav="add a pokemon card" />
+        </button>
+      </Link>
     </div>
   )
 }

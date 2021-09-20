@@ -21,9 +21,9 @@ function App() {
       <Route path = "/details/:id">
         <CardDetails />
       </Route>
-      {/* <Route>
+      <Route path = "/add">
         <AddCard />
-      </Route> */}
+      </Route>
       {/* <Route>
         <EditCard />
       </Route> */}

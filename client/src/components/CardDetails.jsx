@@ -32,6 +32,7 @@ function CardDetails() {
               <p>{card?.fields?.type}</p>
             </div>
           </div>
+          <p>{card?.fields?.set}</p>
           <p>{card?.fields?.date}</p>
           <p>{card?.fields?.obtained}</p>
           <p>{card?.fields?.description}</p>
