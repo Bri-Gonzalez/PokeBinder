@@ -15,8 +15,26 @@
 
 .card-image-container img {
   height: 300px;
+  margin: 5px;
+}
+
+.right-details-container {
+  margin: 5px;
 }
 
 .name-type-container {
   display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.name {
+  margin: 5px;
+}
+
+.type {
+  margin: 5px;
+  background-color: rgb(238, 237, 237);
+  border-radius: 20px;
+  padding: 0;
 }

@@ -23,12 +23,12 @@ function CardDetails() {
         <div className="card-image-container">
           <img src={card?.fields?.image} alt={card?.fields?.title} />
         </div>
-        <div>
+        <div className="right-details-container">
           <div className="name-type-container">
-            <div>
+            <div className="name">
               <h3>{card?.fields?.name}</h3>
             </div>
-            <div>
+            <div className="type">
               <p>{card?.fields?.type}</p>
             </div>
           </div>

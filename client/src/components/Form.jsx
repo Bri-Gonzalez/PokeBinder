@@ -25,6 +25,7 @@ function Form(props) {
       />
       <br />
       <select name="type" id="type" onChange={(e) => props.setType(e.target.value)}>
+        <option>Select Type</option>
         <option value={props.type.grass}>
           Grass
         </option>
@@ -69,13 +70,13 @@ function Form(props) {
       <br />
       <select name="obtained" id="obtained" onChange={(e) => props.setObtained(e.target.value)}>
         <option value={props.obtained.gifted}>
-          Gifted Card
+          Gifted
         </option>
         <option value={props.obtained.pulled}>
-          Pulled Card from a Pack
+          Pulled
         </option>
         <option value={props.obtained.purchased}>
-          Purchased Card
+          Purchased
         </option>
       </select>
       <br />
