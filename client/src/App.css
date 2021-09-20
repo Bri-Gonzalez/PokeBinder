@@ -23,6 +23,18 @@
   font-size: 45px;
 }
 
+.plus-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  right: 10%;
+}
+
+.plus-button img {
+  width: 20px;
+}
+
 .details-title {
   background-color: #ff4e4a;
   color: white;
