@@ -20,12 +20,14 @@ function Home() {
     <div>
       <h1 className="home-title">PokéBinder</h1>
       <div className="home-container">
-        <div className="card-titles">
+        <div className="card-titles-container">
           {cardTitles.map(title => {
             return (
-              <Link to={`/details/${title.id}`} key={title.id}>
-                <h3>{title.fields.title}</h3>
-              </Link>
+              <div className="card-titles">
+                <Link to={`/details/${title.id}`} key={title.id} className="card-title">
+                  <p>{title.fields.title}</p>
+                </Link>
+              </div>
             );
           })}
         </div>
