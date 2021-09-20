@@ -39,6 +39,7 @@ function EditCard() {
       setSet(fields.set);
     };
     fetchToEdit();
+    // eslint-disable-next-line
   }, []);
 
   const handleSubmit = async (e) => {

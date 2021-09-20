@@ -18,3 +18,8 @@ export const fetchCardDetails = async (id) => {
   const res = await axios.get(`${URL}/${id}`, config);
   return res.data;
 }
+
+export const deleteButton = async (id) => {
+  const res = await axios.delete(`${URL}/${id}`, config);
+  return res.data;
+}

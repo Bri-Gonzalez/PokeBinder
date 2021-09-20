@@ -24,6 +24,7 @@ function Home() {
           {cardTitles.map(title => {
             return (
               <div className="card-titles" key={title.id}>
+                {/* <img src={title.fields.image} alt={title.fields.title} className="home-image" /> */}
                 <Link to={`/details/${title.id}`} className="card-title">
                   <p>{title.fields.title}</p>
                 </Link>

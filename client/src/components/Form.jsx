@@ -72,11 +72,14 @@ function Form(props) {
         <option>
           How Card Was Aquired
         </option>
-        <option value={props.obtained.gifted}>
-          Gifted
-        </option>
         <option value={props.obtained.pulled}>
           Pulled
+        </option>
+        <option value={props.obtained.traded}>
+          Traded
+        </option>
+        <option value={props.obtained.gifted}>
+          Gifted
         </option>
         <option value={props.obtained.purchased}>
           Purchased

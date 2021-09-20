@@ -35,6 +35,7 @@ function AddCard() {
       image,
       set,
     };
+    // eslint-disable-next-line
     const res = await axios.post(URL, { fields }, config);
     history.push("/");
   }
