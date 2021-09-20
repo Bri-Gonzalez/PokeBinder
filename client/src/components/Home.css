@@ -8,14 +8,35 @@
   font-size: 45px;
 }
 
-.plus-button {
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-  position: absolute;
-  right: 10%;
+.home-container {
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* position: relative; */
+  margin: auto;
 }
 
-.plus-button img {
-  width: 20px;
+.card-titles {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  /* position: relative; */
+  margin: auto;
+}
+
+.plus-button {
+  cursor: pointer;
+  /* position: absolute; */
+  bottom: 0px;
+  right: 30px;
+  margin: 10px;
+}
+
+.plus-button:visited {
+  text-decoration: none;
+  color: black;
 }
