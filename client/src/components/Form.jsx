@@ -69,6 +69,9 @@ function Form(props) {
       />
       <br />
       <select name="obtained" id="obtained" onChange={(e) => props.setObtained(e.target.value)}>
+        <option>
+          How Card Was Aquired
+        </option>
         <option value={props.obtained.gifted}>
           Gifted
         </option>
@@ -94,7 +97,7 @@ function Form(props) {
         onChange={(e) => props.setImage(e.target.value)}
       />
       <br />
-      <button>Add Card</button>
+      <button>Submit</button>
     </form>
   )
 }

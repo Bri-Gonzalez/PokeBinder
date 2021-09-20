@@ -1,15 +1,11 @@
 import './App.css';
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
-// import Form from "./components/Form";
 import EditCard from "./components/EditCard";
 // import DeleteCard from "./components/DeleteCard";
 import CardDetails from "./components/CardDetails";
 import AddCard from "./components/AddCard";
 import { Route } from "react-router-dom";
-
-// const KEY = process.env.REACT_APP_AIRTABLE_KEY;
-// const BASE = process.env.REACT_APP_AIRTABLE_BASE;
 
 function App() {
   return (
@@ -18,15 +14,15 @@ function App() {
       <Route exact path = "/" >
         <Home />
       </Route>
-      <Route path = "/details/:id">
+      <Route exact path = "/details/:id">
         <CardDetails />
       </Route>
       <Route path = "/add">
         <AddCard />
       </Route>
-      {/* <Route>
+      <Route path ="/details/:id/edit">
         <EditCard />
-      </Route> */}
+      </Route>
     </div>
   );
 }

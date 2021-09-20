@@ -23,8 +23,8 @@ function Home() {
         <div className="card-titles-container">
           {cardTitles.map(title => {
             return (
-              <div className="card-titles">
-                <Link to={`/details/${title.id}`} key={title.id} className="card-title">
+              <div className="card-titles" key={title.id}>
+                <Link to={`/details/${title.id}`} className="card-title">
                   <p>{title.fields.title}</p>
                 </Link>
               </div>
@@ -32,9 +32,7 @@ function Home() {
           })}
         </div>
         <Link to="/add" className="plus-button">
-          {/* <button className="plus-button"> */}
             <FontAwesomeIcon icon={faPlus} />
-          {/* </button> */}
         </Link>
       </div>
     </div>

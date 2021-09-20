@@ -2,6 +2,7 @@ import './CardDetails.css';
 import { useState, useEffect } from "react";
 import { useParams } from "react-router";
 import { fetchCardDetails } from "../services";
+import { Link } from "react-router-dom";
 
 function CardDetails() {
   const [card, setCard] = useState({});
@@ -38,6 +39,9 @@ function CardDetails() {
           <p>{card?.fields?.description}</p>
         </div>
       </div>
+      <Link to={`/details/${card.id}/edit`} className="edit-button">
+            Edit
+        </Link>
     </div>
   )
 }
