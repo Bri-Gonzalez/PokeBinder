@@ -17,6 +17,13 @@ function Form(props) {
         onChange={(e) => props.setName(e.target.value)}
       />
       <br />
+      <input
+        type="text"
+        value={props.set}
+        placeholder="Card Set"
+        onChange={(e) => props.setSet(e.target.value)}
+      />
+      <br />
       <select name="type" id="type" onChange={(e) => props.setType(e.target.value)}>
         <option value={props.type.grass}>
           Grass
@@ -60,7 +67,7 @@ function Form(props) {
         onChange={(e) => props.setDate(e.target.value)}
       />
       <br />
-      <select name="obtained" id="obtained" onChange={(e) => props.setType(e.target.value)}>
+      <select name="obtained" id="obtained" onChange={(e) => props.setObtained(e.target.value)}>
         <option value={props.obtained.gifted}>
           Gifted Card
         </option>

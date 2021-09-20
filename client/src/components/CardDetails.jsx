@@ -1,6 +1,6 @@
+import './CardDetails.css';
 import { useState, useEffect } from "react";
 import { useParams } from "react-router";
-// import { Link } from "react-router-dom";
 import { fetchCardDetails } from "../services";
 
 function CardDetails() {

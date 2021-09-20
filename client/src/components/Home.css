@@ -1,0 +1,21 @@
+.home-title {
+  background-color: #ff4e4a;
+  color: white;
+  width: 350px;
+  margin: 30px auto;
+  border-radius: 20px;
+  font-family: "itim", sans-serif;
+  font-size: 45px;
+}
+
+.plus-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  right: 10%;
+}
+
+.plus-button img {
+  width: 20px;
+}

@@ -1,0 +1,22 @@
+.details-title {
+  background-color: #ff4e4a;
+  color: white;
+  width: 350px;
+  margin: 30px auto;
+  border-radius: 20px;
+  font-family: "itim", sans-serif;
+  font-size: 25px;
+}
+
+.card-container {
+  display: inline-flex;
+  width: 600px;
+}
+
+.card-image-container img {
+  height: 300px;
+}
+
+.name-type-container {
+  display: inline-flex;
+}
