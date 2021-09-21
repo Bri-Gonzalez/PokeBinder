@@ -23,13 +23,14 @@ This app will allow the user to upload their favorite Pokémon cards to a virtua
   "records": [
     {
       "fields": {
-        "title": "Pikachu V",
-        "date": "11/2020",
+        "title": "Special Delivery Pikachu",
+        "date": "12/2020",
         "obtained": "purchased",
         "type": "lightning",
-        "description": "I bought this cards solely for the determined Pikachu face. ",
-        "image": "https://assets.pokemon.com/assets/cms2/img/cards/web/SWSH4/SWSH4_EN_170.png",
-        "name": "Pikachu"
+        "description": "This card was a special time offer for buying from Pokemon Center during December of 2020.",
+        "image": "https://product-images.tcgplayer.com/fit-in/400x558/227646.jpg",
+        "name": "Pikachu",
+        "set": "SWSH Promo"
       }
     },
 ```
@@ -45,22 +46,23 @@ This app will allow the user to upload their favorite Pokémon cards to a virtua
 
 #### PostMVP
 
-- Add second API to display a sprite of the Pokémon on the homepage card names:
-
-  - [PokéAPI](https://pokeapi.co/)
-
+- Allow user to upload an image taken on phone to app
+- Allow user to a tag if card is up for trading
 - On the homepage have the background of each Pokémon card name be the color of the Pokémon's element type.
 - Add a search bar to allow user to search for a specific Pokémon card.
-- Use a third API to display the card images from rather than having the user upload an image URL.
+- Add cards to favorite
+- Use a second API to display the card images from rather than having the user upload an image URL.
   - [Pokémon TCG API](https://dev.pokemontcg.io/)
+- Add third API to display a sprite of the Pokémon on the homepage card names:
+  - [PokéAPI](https://pokeapi.co/)
 
 ## Project Schedule
 
 | Day      | Deliverable                                                   | Status     |
 | -------- | ------------------------------------------------------------- | ---------- |
 | Sept. 16 | Prompt / Wireframes / Proposal Approval                       | Complete   |
-| Sept. 17 | Component Hierarchy / Timeframes / Core Application Structure | Incomplete |
-| Sept. 20 | Pseudocode / Actual Code                                      | Incomplete |
+| Sept. 17 | Component Hierarchy / Timeframes / Core Application Structure | Complete   |
+| Sept. 20 | Pseudocode / Actual Code                                      | Complete   |
 | Sept. 21 | Sept. 20 cont'd / Initial Clickable Model                     | Incomplete |
 | Sept. 22 | CSS Styling                                                   | Incomplete |
 | Sept. 23 | Complete MVP                                                  | Incomplete |
@@ -70,20 +72,20 @@ This app will allow the user to upload their favorite Pokémon cards to a virtua
 
 | Component                   | Priority | Estimated Time | Time Invested | Actual Time |
 | --------------------------- | :------: | :------------: | :-----------: | :---------: |
-| Proposal                    |    H     |      3hrs      |      --       |     --      |
-| Airtable Setup              |    H     |      1hr       |      --       |     --      |
-| Setting up Components       |    H     |      1hrs      |      --       |     --      |
-| Getting API Info to Page    |    H     |      1hrs      |      --       |     --      |
-| Clickable Card Names        |    H     |      2hrs      |      --       |     --      |
+| Proposal                    |    H     |      3hrs      |     3hrs      |    3hrs     |
+| Airtable Setup              |    H     |      1hr       |      1hr      |     1hr     |
+| Setting up Components       |    H     |      1hrs      |     .5hrs     |    .5hrs    |
+| Getting API Info to Page    |    H     |      1hrs      |     .5hrs     |    .5hrs    |
+| Clickable Card Names        |    H     |      2hrs      |      1hr      |     1hr     |
 | Pagination for Homepage     |    H     |      3hrs      |      --       |     --      |
-| Card Details Page           |    H     |      3hrs      |      --       |     --      |
-| Form Creation               |    H     |      3hrs      |      --       |     --      |
-| Add Card Button             |    H     |      1hr       |      --       |     --      |
-| Edit Card Function          |    H     |      2hrs      |      --       |     --      |
-| Edit Card Button            |    H     |      1hr       |      --       |     --      |
-| Delete Card Function        |    H     |      3hrs      |      --       |     --      |
-| Delete Card Button          |    H     |      1hrs      |      --       |     --      |
-| CSS Style Navbar            |    H     |      3hrs      |      --       |     --      |
+| Card Details Page           |    H     |      3hrs      |      1hr      |     1hr     |
+| Form Creation               |    H     |      3hrs      |     3hrs      |    3hrs     |
+| Add Card Button             |    H     |      1hr       |      1hr      |     1hr     |
+| Edit Card Function          |    H     |      2hrs      |     2hrs      |    2hrs     |
+| Edit Card Button            |    H     |      1hr       |     .5hrs     |    .5hrs    |
+| Delete Card Function        |    H     |      3hrs      |    1.5hrs     |   1.5hrs    |
+| Delete Card Button          |    H     |      1hrs      |     .5hrs     |    .5hrs    |
+| CSS Style Navbar            |    H     |      3hrs      |     .5hrs     |     --      |
 | CSS Style Homepage          |    H     |      3hrs      |      --       |     --      |
 | Working Modal for Form      |    H     |      3hrs      |      --       |     --      |
 | CSS Style Modal for Form    |    H     |      2hrs      |      --       |     --      |
