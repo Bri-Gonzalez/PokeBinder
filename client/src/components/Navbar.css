@@ -2,8 +2,25 @@
   background-color: #ff4e4a;
   height: 35px;
   display: flex;
+  display: flex;
+  justify-content: right;
+  align-items: center;
 }
 
 .inline-nav {
   display: inline-flex;
+  /* color: white;
+  font-family: "itim", sans-serif; */
+  font-size: 17px;
+  margin-right: 10px;
+}
+
+.link {
+  margin: 0 15px 0 0;
+  color: white;
+  font-family: "itim", sans-serif;
+}
+
+.link:hover {
+  color: #ffd4d4;
 }

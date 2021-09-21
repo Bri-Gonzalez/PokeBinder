@@ -6,10 +6,10 @@ function Navbar() {
     <nav className="top-nav">
       <div className="inline-nav">
         <div>
-          PokéApps
+          <a className="link" href="https://bri-gonzalez.github.io/PokeApps/index.html">PokéApps</a>
         </div>
         <div>
-          <Link to="/">Home</Link>
+          <Link to="/" className="link">Home</Link>
         </div>
       </div>
     </nav>

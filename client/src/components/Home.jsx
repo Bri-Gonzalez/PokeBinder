@@ -34,9 +34,11 @@ function Home() {
             );
           })}
         </div>
-        <Link to="/add" className="plus-button">
-            <FontAwesomeIcon icon={faPlus} />
-        </Link>
+        <div className="plus-button">
+          <Link to="/add" >
+            <FontAwesomeIcon icon={faPlus} size="2x"/>
+          </Link>
+        </div>
       </div>
     </div>
   )

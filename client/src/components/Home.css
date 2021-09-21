@@ -20,8 +20,11 @@
   align-items: center;
   /* position: relative; */
   margin: auto;
-  background-color: #c4efff;
+  /* background-color: #c4efff; */
+  /* background-color: #18bca2; */
+  /* background-color: #fef5e1; */
   border-radius: 20px;
+  padding: 10px;
 }
 
 .card-titles-container {
@@ -71,6 +74,11 @@
   color: black;
 } */
 
-svg {
+/* svg {
   color: black;
-}
+} */
+
+/* .plus-button {
+  margin-bottom: 0px;
+  margin-right: 0px;
+} */
