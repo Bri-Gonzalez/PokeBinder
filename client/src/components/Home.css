@@ -55,15 +55,6 @@
   color: black;
 }
 
-.plus-button {
-  cursor: pointer;
-  /* position: absolute; */
-  bottom: 0px;
-  right: 30px;
-  margin: 10px;
-}
-
-.plus-button:visited {
-  text-decoration: none;
+svg {
   color: black;
 }

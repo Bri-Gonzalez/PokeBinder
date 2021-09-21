@@ -10,17 +10,29 @@
 
 .card-container {
   display: inline-flex;
-  width: 600px;
+  min-width: 400px;
 }
 
 .card-image-container img {
   height: 300px;
-  margin: 5px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .right-details-container {
-  margin: 5px;
+  margin: 5px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 350px;
 }
+
+/* .right-details-container p {
+  margin: 10px;
+} */
 
 .name-type-container {
   display: inline-flex;
@@ -37,4 +49,8 @@
   background-color: rgb(238, 237, 237);
   border-radius: 20px;
   padding: 0;
+}
+
+svg {
+  color: black;
 }

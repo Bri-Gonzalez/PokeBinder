@@ -4,6 +4,8 @@ import { useParams } from "react-router";
 import { fetchCardDetails } from "../services";
 import { Link } from "react-router-dom";
 import DeleteCard from './DeleteCard';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEdit } from "@fortawesome/free-solid-svg-icons";
 
 function CardDetails() {
   const [card, setCard] = useState({});
@@ -40,10 +42,12 @@ function CardDetails() {
           <p>{card?.fields?.description}</p>
         </div>
       </div>
+      <div>
         <Link to={`/details/${card.id}/edit`} className="edit-button">
-          Edit
-      </Link>
-      <DeleteCard id={id}/>
+          <FontAwesomeIcon icon={faEdit} />
+        </Link>
+        <DeleteCard id={id} />
+      </div>
     </div>
   )
 }
