@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { fetchCardTitles } from "../services";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlus } from "@fortawesome/free-solid-svg-icons";
+// import Image from "react-bootstrap/Image";
 
 
 function Home() {
@@ -26,7 +27,8 @@ function Home() {
               <div className="card-titles" key={title.id}>
                 {/* <img src={title.fields.image} alt={title.fields.title} className="home-image" /> */}
                 <Link to={`/details/${title.id}`} className="card-title">
-                  <p>{title.fields.title}</p>
+                  <img src={title.fields.image} alt={title.fields.title} className="home-image" />
+                  {/* <p>{title.fields.title}</p> */}
                 </Link>
               </div>
             );

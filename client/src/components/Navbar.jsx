@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
-    <div className="top-nav" >
+    <nav className="top-nav">
       <div className="inline-nav">
         <div>
           PokéApps
@@ -12,7 +12,7 @@ function Navbar() {
           <Link to="/">Home</Link>
         </div>
       </div>
-    </div>
+    </nav>
   )
 }
 

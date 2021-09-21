@@ -6,6 +6,7 @@ import EditCard from "./components/EditCard";
 import CardDetails from "./components/CardDetails";
 import AddCard from "./components/AddCard";
 import { Route } from "react-router-dom";
+// import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (

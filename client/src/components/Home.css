@@ -1,3 +1,7 @@
+/* * {
+  background-color: #c4efff;
+} */
+
 .home-title {
   background-color: #ff4e4a;
   color: white;
@@ -27,14 +31,15 @@
   margin: auto;
 }
 
-/* .home-image {
-  height: 50px;
-} */
+.home-image {
+  height: 170px;
+  margin: auto;
+}
 
 .card-titles {
-  width: 200px;
-  height: 70px;
-  border: 1px solid rgb(94, 94, 94);
+  /* width: 200px;
+  height: 70px; */
+  border: 1px solid rgb(172, 172, 172);
   border-radius: 10px;
   margin: 15px;
   padding: 10px;
@@ -46,6 +51,13 @@
 }
 
 .card-title {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .card-title {
   text-decoration: none;
   cursor: pointer;
 }
@@ -53,7 +65,7 @@
 .card-title:visited {
   text-decoration: none;
   color: black;
-}
+} */
 
 svg {
   color: black;
