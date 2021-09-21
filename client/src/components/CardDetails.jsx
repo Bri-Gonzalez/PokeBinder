@@ -6,18 +6,25 @@ import { Link } from "react-router-dom";
 import DeleteCard from './DeleteCard';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEdit } from "@fortawesome/free-solid-svg-icons";
+import BeatLoader from "react-spinners/BeatLoader";
 
 function CardDetails() {
   const [card, setCard] = useState({});
   const { id } = useParams();
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const getCard = async () => {
       setCard(await fetchCardDetails(id));
+      setLoading(false);
     }
     getCard();
     // eslint-disable-next-line
   }, []);
+
+  if (loading) {
+    return <BeatLoader />;
+  }
 
 
   return (

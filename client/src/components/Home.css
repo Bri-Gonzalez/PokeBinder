@@ -50,6 +50,10 @@
   box-shadow: 3px 5px 10px rgb(89, 89, 89);
 }
 
+.card-images-container:hover {
+  background-color: #ff8280;
+}
+
 .image {
   height: 170px;
   margin: auto;
@@ -66,6 +70,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.plus-button {
+  color: black;
 }
 
 .plus-button:hover {
