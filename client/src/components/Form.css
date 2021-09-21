@@ -1,0 +1,37 @@
+.form-container {
+  background-color: #f2f2f2;
+  width: 350px;
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+  border-radius: 10px;
+}
+
+.form-title {
+  font-family: "itim", sans-serif;
+  font-size: 20px;
+  margin: 0 0 10px 0;
+}
+
+input[type="text"],
+select {
+  width: 300px;
+  padding: 12px 20px;
+  margin: 4px 0 4px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-family: "itim", sans-serif;
+  font-size: 15px;
+}
+
+.submit-btn {
+  width: 100px;
+  font-family: "itim", sans-serif;
+  font-size: 15px;
+  margin: 10px;
+  cursor: pointer;
+}
