@@ -8,8 +8,12 @@
   font-size: 25px;
 }
 
-.card-container {
-  width: 670px;
+.pokemon-card-container {
+  width: 600px;
+  background-color: #c4efff;
+  margin: auto;
+  padding: 30px 15px 30px 30px;
+  border-radius: 20px;
 }
 
 .inline-containers {
@@ -21,6 +25,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 3px 5px 10px rgb(89, 89, 89);
 }
 
 .card-image-container img {
@@ -29,7 +36,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 15px;
+  padding: 10px;
 }
 
 .right-details-container {
@@ -37,13 +44,14 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  text-align: start;
   /* align-items: center; */
   /* max-width: 350px; */
 }
 
-/* .right-details-container p {
-  margin: 10px;
-} */
+.details p {
+  padding: 0 30px 0 30px;
+}
 
 .name-type-container {
   display: inline-flex;
@@ -60,6 +68,7 @@
   background-color: rgb(238, 237, 237);
   border-radius: 20px;
   padding: 0 7px 0 7px;
+  box-shadow: 3px 5px 10px rgb(89, 89, 89);
 }
 
 .edit-button {
@@ -71,5 +80,5 @@
   display: flex;
   justify-content: right;
   align-items: center;
-  margin: 0 20px 0 0;
+  margin: 20px 20px 0 0;
 }

@@ -23,7 +23,7 @@ function CardDetails() {
   return (
     <div>
       <h1 className="details-title">{card?.fields?.title}</h1>
-      <div className="card-container">
+      <div className="pokemon-card-container">
         <div className="inline-containers">
           <div className="card-image-container">
             <img src={card?.fields?.image} alt={card?.fields?.title} />
@@ -37,10 +37,12 @@ function CardDetails() {
                 <p>{card?.fields?.type}</p>
               </div>
             </div>
-            <p><b>Card Set:</b> {card?.fields?.set}</p>
-            <p><b>Date Collected:</b> {card?.fields?.date}</p>
-            <p><b>How I got card:</b> {card?.fields?.obtained}</p>
-            <p><b>Description:</b> {card?.fields?.description}</p>
+            <div className="details">
+              <p><b>Card Set:</b> {card?.fields?.set}</p>
+              <p><b>Date Collected:</b> {card?.fields?.date}</p>
+              <p><b>How card was aquired:</b> {card?.fields?.obtained}</p>
+              <p><b>Description:</b><br />{card?.fields?.description}</p>
+            </div>
             <div className="inline-btns">
               <Link to={`/details/${card.id}/edit`} >
                 <FontAwesomeIcon icon={faEdit} size="lg" className="edit-button"/>
