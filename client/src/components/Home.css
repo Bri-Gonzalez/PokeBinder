@@ -64,21 +64,12 @@
   align-items: center;
 }
 
-/* .card-title {
-  text-decoration: none;
-  cursor: pointer;
+.plus-btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.card-title:visited {
-  text-decoration: none;
-  color: black;
-} */
-
-/* svg {
-  color: black;
-} */
-
-/* .plus-button {
-  margin-bottom: 0px;
-  margin-right: 0px;
-} */
+.plus-button:hover {
+  color: #ffd4d4;
+}

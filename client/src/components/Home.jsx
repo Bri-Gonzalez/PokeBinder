@@ -20,12 +20,16 @@ function Home() {
   return (
     <div>
       <h1 className="home-title">PokéBinder</h1>
+      <div className="plus-btn-container">
+        <Link to="/add">
+          <FontAwesomeIcon icon={faPlus} size="2x" className="plus-button"/>
+        </Link>
+      </div>
       <div className="home-container">
         <div className="card-titles-container">
           {cardTitles.map(title => {
             return (
               <div className="card-titles" key={title.id}>
-                {/* <img src={title.fields.image} alt={title.fields.title} className="home-image" /> */}
                 <Link to={`/details/${title.id}`} className="card-title">
                   <img src={title.fields.image} alt={title.fields.title} className="home-image" />
                   {/* <p>{title.fields.title}</p> */}
@@ -33,11 +37,6 @@ function Home() {
               </div>
             );
           })}
-        </div>
-        <div className="plus-button">
-          <Link to="/add" >
-            <FontAwesomeIcon icon={faPlus} size="2x"/>
-          </Link>
         </div>
       </div>
     </div>
