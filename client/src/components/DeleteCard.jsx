@@ -1,3 +1,4 @@
+import './DeleteCard.css';
 import { useHistory } from "react-router";
 import { deleteButton } from "../services";
 import { Link } from "react-router-dom";
@@ -12,8 +13,8 @@ function DeleteCard(props) {
     history.push("/");
   }
   return (
-    <Link to="/" className="delete-button">
-        <FontAwesomeIcon icon={faTrashAlt} onClick={handleDelete} />
+    <Link to="/">
+        <FontAwesomeIcon icon={faTrashAlt} onClick={handleDelete} size="lg" className="delete-button" />
     </Link>
   )
 }

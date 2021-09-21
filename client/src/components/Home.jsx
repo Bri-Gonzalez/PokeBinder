@@ -1,20 +1,20 @@
 import './Home.css';
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { fetchCardTitles } from "../services";
+import { fetchCardImages } from "../services";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlus } from "@fortawesome/free-solid-svg-icons";
 // import Image from "react-bootstrap/Image";
 
 
 function Home() {
-  const [cardTitles, setCardTitles] = useState([]);
+  const [cardImages, setCardImages] = useState([]);
 
   useEffect(() => {
-    const getCardTitles = async () => {
-      setCardTitles(await fetchCardTitles());
+    const getCardImages = async () => {
+      setCardImages(await fetchCardImages());
     };
-    getCardTitles();
+    getCardImages();
   }, [])
 
   return (
@@ -26,13 +26,12 @@ function Home() {
         </Link>
       </div>
       <div className="home-container">
-        <div className="card-titles-container">
-          {cardTitles.map(title => {
+        <div className="card-container">
+          {cardImages.map(img => {
             return (
-              <div className="card-titles" key={title.id}>
-                <Link to={`/details/${title.id}`} className="card-title">
-                  <img src={title.fields.image} alt={title.fields.title} className="home-image" />
-                  {/* <p>{title.fields.title}</p> */}
+              <div className="card-images-container" key={img.id}>
+                <Link to={`/details/${img.id}`} className="card-image">
+                  <img src={img.fields.image} alt={img.fields.title} className="image" />
                 </Link>
               </div>
             );

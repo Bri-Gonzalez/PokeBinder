@@ -9,7 +9,7 @@ const config = {
   }
 };
 
-export const fetchCardTitles = async () => {
+export const fetchCardImages = async () => {
   const res = await axios.get(URL, config);
   return res.data.records;
 }

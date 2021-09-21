@@ -27,7 +27,7 @@
   padding: 10px;
 }
 
-.card-titles-container {
+.card-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -36,12 +36,7 @@
   margin: auto;
 }
 
-.home-image {
-  height: 170px;
-  margin: auto;
-}
-
-.card-titles {
+.card-images-container {
   /* width: 200px;
   height: 70px; */
   /* border: 1px solid rgb(172, 172, 172); */
@@ -57,7 +52,12 @@
   box-shadow: 3px 5px 10px rgb(89, 89, 89);
 }
 
-.card-title {
+.image {
+  height: 170px;
+  margin: auto;
+}
+
+.card-image {
   margin: auto;
   display: flex;
   justify-content: center;
