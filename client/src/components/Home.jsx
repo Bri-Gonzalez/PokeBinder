@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import { fetchCardImages } from "../services";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlus } from "@fortawesome/free-solid-svg-icons";
-// import Image from "react-bootstrap/Image";
 
 
 function Home() {
@@ -22,7 +21,7 @@ function Home() {
       <h1 className="home-title">PokéBinder</h1>
       <div className="plus-btn-container">
         <Link to="/add">
-          <FontAwesomeIcon icon={faPlus} size="2x" className="plus-button"/>
+          <FontAwesomeIcon icon={faPlus} size="lg" className="plus-button"/>
         </Link>
       </div>
       <div className="home-container">

@@ -70,10 +70,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  /* border: 2px solid black; */
 }
 
 .plus-button {
   color: black;
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 50%;
+  padding: 5px;
 }
 
 .plus-button:hover {

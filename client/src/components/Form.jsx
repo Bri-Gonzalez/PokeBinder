@@ -7,6 +7,7 @@ function Form(props) {
         <p className="form-title">Card Details</p>
         <input
           type="text"
+          autoFocus
           value={props.title}
           placeholder="Card Title"
           onChange={(e) => props.setTitle(e.target.value)}
