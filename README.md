@@ -86,10 +86,10 @@ This app will allow the user to upload their favorite Pokémon cards to a virtua
 | Delete Card Function        |    H     |      3hrs      |    1.5hrs     |   1.5hrs    |
 | Delete Card Button          |    H     |      1hrs      |     .5hrs     |    .5hrs    |
 | CSS Style Navbar            |    H     |      3hrs      |     .5hrs     |     --      |
-| CSS Style Homepage          |    H     |      3hrs      |      --       |     --      |
-| Working Modal for Form      |    H     |      3hrs      |      --       |     --      |
-| CSS Style Modal for Form    |    H     |      2hrs      |      --       |     --      |
-| CSS Style Card Details Page |    H     |      3hrs      |      --       |     --      |
+| CSS Style Homepage          |    H     |      3hrs      |     3hrs      |     --      |
+| Working Modal for Form      |    H     |      3hrs      |     4hrs      |     --      |
+| CSS Style Form & Modal      |    H     |      2hrs      |     2hrs      |     --      |
+| CSS Style Card Details Page |    H     |      3hrs      |     3hrs      |     --      |
 | Responsive App              |    H     |      2hrs      |      --       |     --      |
 | Total                       |          |     41hrs      |      --       |     --      |
 
