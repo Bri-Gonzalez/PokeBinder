@@ -63,8 +63,9 @@ function CardDetails() {
 
   return (
     <div>
-      <h1 className="details-title">{card?.fields?.title}</h1>
+      {/* <h1 className="details-title">{card?.fields?.title}</h1> */}
       <div className="pokemon-card-container">
+        <h1 className="details-title">{card?.fields?.title}</h1>
         <div className="inline-containers">
           <div className="card-image-container">
             <img src={card?.fields?.image} alt={card?.fields?.title} />

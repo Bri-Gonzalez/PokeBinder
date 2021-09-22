@@ -56,7 +56,7 @@ function Home() {
       <div className="plus-btn-container">
         {/* <Link to="/add"> */}
         {/* <button onClick={openModal}> */}
-            <FontAwesomeIcon onClick={openModal} icon={faPlus} size="lg" className="plus-button"/>
+            <FontAwesomeIcon onClick={openModal} icon={faPlus} size="sm" className="plus-button"/>
         {/* </button> */}
         {/* </Link> */}
         <Modal
