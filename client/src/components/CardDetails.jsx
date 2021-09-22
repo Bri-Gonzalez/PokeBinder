@@ -59,12 +59,6 @@ function CardDetails() {
           </div>
         </div>
       </div>
-      {/* <div className="inline-btns">
-        <Link to={`/details/${card.id}/edit`} >
-          <FontAwesomeIcon icon={faEdit} size="lg" className="edit-button"/>
-        </Link>
-        <DeleteCard id={id} />
-      </div> */}
     </div>
   )
 }
