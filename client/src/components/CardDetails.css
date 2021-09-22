@@ -77,6 +77,10 @@
   margin: 5px;
 }
 
+.edit-button:hover {
+  transform: scale(1.2);
+}
+
 .inline-btns {
   display: flex;
   justify-content: right;

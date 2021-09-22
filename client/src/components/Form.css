@@ -1,26 +1,25 @@
 .form-container {
-  background-color: #197092;
+  /* background-color: #197092;
   width: 350px;
-  margin: 20px auto;
+  margin: 20px auto; */
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 25px;
+  /* padding: 25px;
   border-radius: 10px;
-  box-shadow: 3px 5px 10px rgb(89, 89, 89);
+  box-shadow: 3px 5px 10px rgb(89, 89, 89); */
 }
 
 input:focus {
-  /* background-color: #fef8d9; */
   outline-width: 3px;
   outline-style: dashed;
   outline-color: #ff4e4a;
 }
 
-.form-container:hover {
+/* .form-container:hover {
   transform: scale(1.1);
   box-shadow: 3px 5px 10px rgb(89, 89, 89);
-}
+} */
 
 .form-title {
   font-family: "itim", sans-serif;
@@ -32,7 +31,7 @@ input:focus {
 input[type="text"],
 select {
   width: 300px;
-  padding: 12px 20px;
+  padding: 5px 15px;
   margin: 4px 0 4px 0;
   display: inline-block;
   border: 1px solid #ccc;
@@ -40,6 +39,7 @@ select {
   box-sizing: border-box;
   font-family: "itim", sans-serif;
   font-size: 15px;
+  color: gray;
 }
 
 .submit-btn {

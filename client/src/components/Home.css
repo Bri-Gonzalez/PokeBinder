@@ -51,7 +51,8 @@
 }
 
 .card-images-container:hover {
-  background-color: #ff8280;
+  /* background-color: #ff8280; */
+  transform: scale(1.2);
 }
 
 .image {
@@ -81,5 +82,5 @@
 }
 
 .plus-button:hover {
-  color: #ffd4d4;
+  transform: scale(1.2);
 }
