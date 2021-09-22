@@ -42,6 +42,7 @@ This app will allow the user to upload their favorite Pokémon cards to a virtua
 - Homepage with clickable Pokémon card names that route to each respective Pokémon.
 - Get and post Pokémon cards from Airtable.
 - Use a form to add Pokémon cards and update Airtable.
+- Create a modal for the form.
 - Delete Pokémon cards from the collection and Airtable.
 
 #### PostMVP
@@ -58,15 +59,17 @@ This app will allow the user to upload their favorite Pokémon cards to a virtua
 
 ## Project Schedule
 
-| Day      | Deliverable                                                   | Status     |
-| -------- | ------------------------------------------------------------- | ---------- |
-| Sept. 16 | Prompt / Wireframes / Proposal Approval                       | Complete   |
-| Sept. 17 | Component Hierarchy / Timeframes / Core Application Structure | Complete   |
-| Sept. 20 | Pseudocode / Actual Code                                      | Complete   |
-| Sept. 21 | Sept. 20 cont'd / Initial Clickable Model                     | Incomplete |
-| Sept. 22 | CSS Styling                                                   | Incomplete |
-| Sept. 23 | Complete MVP                                                  | Incomplete |
-| Sept. 24 | Presentations                                                 | Incomplete |
+| Day         | Deliverable                                                   | Status     |
+| ----------- | ------------------------------------------------------------- | ---------- |
+| Sept. 16    | Prompt / Wireframes / Proposal Approval                       | Complete   |
+| Sept. 17    | Component Hierarchy / Timeframes / Core Application Structure | Complete   |
+| Sept. 20    | Pseudocode / Actual Code                                      | Complete   |
+| Sept. 21    | Sept. 20 cont'd / Begin CSS                                   | Complete   |
+| Sept. 22    | Initial Clickable Model / CSS Styling                         | Incomplete |
+| Sept. 23    | Complete MVP / Begin Post MVP                                 | Incomplete |
+| Sept. 24    | Post MVP Items                                                | Incomplete |
+| Sept. 25-26 | Completing App / Cleaning Code                                | Incomplete |
+| Sept. 27    | Presentations                                                 | Incomplete |
 
 ## Timeframes
 
@@ -87,9 +90,9 @@ This app will allow the user to upload their favorite Pokémon cards to a virtua
 | Delete Card Button          |    H     |      1hrs      |     .5hrs     |    .5hrs    |
 | CSS Style Navbar            |    H     |      3hrs      |     .5hrs     |     --      |
 | CSS Style Homepage          |    H     |      3hrs      |     3hrs      |     --      |
-| Working Modal for Form      |    H     |      3hrs      |     4hrs      |     --      |
-| CSS Style Form & Modal      |    H     |      2hrs      |     2hrs      |     --      |
-| CSS Style Card Details Page |    H     |      3hrs      |     3hrs      |     --      |
+| Working Modal for Form      |    H     |      3hrs      |     5hrs      |    5hrs     |
+| CSS Style Form & Modal      |    H     |      2hrs      |     2hrs      |    2hrs     |
+| CSS Style Card Details Page |    H     |      3hrs      |    3.5hrs     |     --      |
 | Responsive App              |    H     |      2hrs      |      --       |     --      |
 | Total                       |          |     41hrs      |      --       |     --      |
 
