@@ -1,5 +1,5 @@
 import './CardDetails.css';
-import React from "react";
+// import React from "react";
 import DeleteCard from './DeleteCard';
 import Modal from "react-modal";
 import EditCard from "./EditCard";
@@ -33,7 +33,7 @@ function CardDetails() {
   const [card, setCard] = useState({});
   const { id } = useParams();
   const [loading, setLoading] = useState(true);
-  const [modalIsOpen, setIsOpen] = React.useState(false);
+  const [modalIsOpen, setIsOpen] = useState(false);
   const [toggle, setToggle] = useState(false);
 
   function openModal() {

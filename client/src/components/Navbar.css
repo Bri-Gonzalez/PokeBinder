@@ -1,15 +1,44 @@
 .top-nav {
   background-color: #ff4e4a;
+  overflow: hidden;
+  /* height: 35px; */
+}
+
+.top-nav a {
+  float: left;
+  color: white;
+  text-align: center;
+  /* font-family: "itim", sans-serif; */
+  padding: 10px 20px;
+  /* font-size: 19px; */
+  text-decoration: none;
+}
+
+.top-nav a:hover {
+  color: #ffd4d4;
+}
+
+.top-nav-right {
+  float: right;
+  font-family: "itim", sans-serif;
+  font-size: 19px;
+}
+
+.pokeapps-link {
+  font-family: "Boogaloo", sans-serif;
+  font-size: 22px;
+}
+
+/* .top-nav {
+  background-color: #ff4e4a;
   height: 35px;
   display: flex;
-  /* justify-content: right; */
+  justify-content: right;
   align-items: center;
 }
 
 .inline-nav {
   display: inline-flex;
-  /* color: white;
-  font-family: "itim", sans-serif; */
   font-size: 17px;
   margin-right: 10px;
   display: flex;
@@ -17,19 +46,12 @@
   align-items: center;
 }
 
-.pokeapps-link {
+.link {
   margin: 0 15px 0 0;
   color: white;
   font-family: "itim", sans-serif;
-}
-
-.pokebinder-link {
-  margin: 0 15px 0 0;
-  color: white;
-  font-family: "itim", sans-serif;
-  justify-content: right;
 }
 
 .link:hover {
   color: #ffd4d4;
-}
+} */

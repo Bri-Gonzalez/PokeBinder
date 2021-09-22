@@ -1,5 +1,5 @@
 import './Home.css';
-import React from "react";
+// import React from "react";
 import Modal from "react-modal";
 import AddCard from "./AddCard";
 import { useEffect, useState } from "react";
@@ -28,7 +28,7 @@ Modal.setAppElement('#root');
 
 function Home() {
   const [cardImages, setCardImages] = useState([]);
-  const [modalIsOpen, setIsOpen] = React.useState(false);
+  const [modalIsOpen, setIsOpen] = useState(false);
   const [toggle, setToggle] = useState(false);
 
   function openModal() {
