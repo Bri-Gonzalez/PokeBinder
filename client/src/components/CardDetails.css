@@ -50,10 +50,6 @@
   /* max-width: 350px; */
 }
 
-.details p {
-  padding: 0 30px 0 30px;
-}
-
 .name-type-container {
   display: inline-flex;
   justify-content: center;
@@ -62,6 +58,8 @@
 
 .name {
   margin: 5px;
+  font-family: "Boogaloo", sans-serif;
+  font-size: 25px;
 }
 
 .type {
@@ -70,6 +68,12 @@
   border-radius: 20px;
   padding: 0 7px 0 7px;
   box-shadow: 3px 5px 10px rgb(89, 89, 89);
+  /* font-family: "itim", sans-serif; */
+}
+
+.details p {
+  padding: 0 30px 0 30px;
+  /* font-family: "itim", sans-serif; */
 }
 
 .edit-button {

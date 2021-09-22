@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { useParams } from "react-router";
 import axios from "axios";
 import Form from "./Form";
-import { useHistory } from "react-router";
+// import { useHistory } from "react-router";
 
 const airtableBase = process.env.REACT_APP_AIRTABLE_BASE;
 const airtableKey = process.env.REACT_APP_AIRTABLE_KEY;
@@ -13,7 +13,7 @@ const config = {
   }
 };
 
-function EditCard() {
+function EditCard(props) {
   const [title, setTitle] = useState("");
   const [name, setName] = useState("");
   const [date, setDate] = useState("");
@@ -23,7 +23,7 @@ function EditCard() {
   const [image, setImage] = useState("");
   const [set, setSet] = useState("");
   const { id } = useParams();
-  const history = useHistory();
+  // const history = useHistory();
 
   useEffect(() => {
     const fetchToEdit = async () => {
@@ -54,8 +54,11 @@ function EditCard() {
       image,
       set,
     };
+    // eslint-disable-next-line
     const res = await axios.put(`${URL}/${id}`, { fields }, config);
-    history.push(`/details/${res.data.id}`);
+    props.closeModal();
+    props.setToggle(prevToggle => !prevToggle);
+    // history.push(`/details/${res.data.id}`);
   }
 
   return (

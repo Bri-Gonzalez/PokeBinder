@@ -29,13 +29,14 @@ Modal.setAppElement('#root');
 function Home() {
   const [cardImages, setCardImages] = useState([]);
   const [modalIsOpen, setIsOpen] = React.useState(false);
+  const [toggle, setToggle] = useState(false);
 
   function openModal() {
     setIsOpen(true);
   }
 
-  function afterOpenModal() {
-  }
+  // function afterOpenModal() {
+  // }
 
   function closeModal() {
     setIsOpen(false);
@@ -47,25 +48,28 @@ function Home() {
       setCardImages(await fetchCardImages());
     };
     getCardImages();
-  }, [])
+  }, [toggle])
 
   return (
     <div>
       <h1 className="home-title">PokéBinder</h1>
       <div className="plus-btn-container">
         {/* <Link to="/add"> */}
-        <button onClick={openModal}>
-            <FontAwesomeIcon icon={faPlus} size="lg" className="plus-button"/>
-        </button>
+        {/* <button onClick={openModal}> */}
+            <FontAwesomeIcon onClick={openModal} icon={faPlus} size="lg" className="plus-button"/>
+        {/* </button> */}
         {/* </Link> */}
         <Modal
           isOpen={modalIsOpen}
-          onAfterOpen={afterOpenModal}
+          // onAfterOpen={afterOpenModal}
           onRequestClose={closeModal}
           style={customStyles}
         >
-          <AddCard />
-          <button onClick={closeModal}>close</button>
+          <AddCard
+            closeModal={closeModal}
+            setToggle={setToggle}
+          />
+          {/* <button onClick={closeModal}>Submit</button> */}
         </Modal>
         
       </div>

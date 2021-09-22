@@ -103,7 +103,7 @@ function Form(props) {
           onChange={(e) => props.setImage(e.target.value)}
         />
         <br />
-        <button className="submit-btn">Submit</button>
+        <button className="submit-btn">Save</button>
       </form>
     </div>
   )

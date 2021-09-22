@@ -2,7 +2,7 @@
   background-color: #ff4e4a;
   height: 35px;
   display: flex;
-  justify-content: right;
+  /* justify-content: right; */
   align-items: center;
 }
 
@@ -17,25 +17,19 @@
   align-items: center;
 }
 
-.link {
+.pokeapps-link {
   margin: 0 15px 0 0;
   color: white;
   font-family: "itim", sans-serif;
 }
 
+.pokebinder-link {
+  margin: 0 15px 0 0;
+  color: white;
+  font-family: "itim", sans-serif;
+  justify-content: right;
+}
+
 .link:hover {
   color: #ffd4d4;
 }
-
-/* .plus-button {
-  color: white;
-}
-
-.plus-button {
-  border: 2px solid white;
-  padding: 2px;
-}
-
-.plus-button:hover {
-  color: #ffd4d4;
-} */

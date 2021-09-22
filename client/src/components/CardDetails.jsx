@@ -13,12 +13,15 @@ import BeatLoader from "react-spinners/BeatLoader";
 
 const customStyles = {
   content: {
-    top: '50%',
-    left: '50%',
-    right: 'auto',
-    bottom: 'auto',
-    marginRight: '-50%',
-    transform: 'translate(-50%, -50%)',
+    top: "50%",
+    left: "50%",
+    right: "auto",
+    bottom: "auto",
+    marginRight: "-50%",
+    transform: "translate(-50%, -50%)",
+    backgroundColor: "#197092",
+    width: "350px",
+    borderRadius: "10px",
   },
 };
 
@@ -31,13 +34,14 @@ function CardDetails() {
   const { id } = useParams();
   const [loading, setLoading] = useState(true);
   const [modalIsOpen, setIsOpen] = React.useState(false);
+  const [toggle, setToggle] = useState(false);
 
   function openModal() {
     setIsOpen(true);
   }
 
-  function afterOpenModal() {
-  }
+  // function afterOpenModal() {
+  // }
 
   function closeModal() {
     setIsOpen(false);
@@ -50,7 +54,7 @@ function CardDetails() {
     }
     getCard();
     // eslint-disable-next-line
-  }, []);
+  }, [toggle]);
 
   if (loading) {
     return <BeatLoader />;
@@ -68,7 +72,7 @@ function CardDetails() {
           <div className="right-details-container">
             <div className="name-type-container">
               <div className="name">
-                <h3>{card?.fields?.name}</h3>
+                <p>{card?.fields?.name}</p>
               </div>
               <div className="type">
                 <p>{card?.fields?.type}</p>
@@ -82,18 +86,21 @@ function CardDetails() {
             </div>
             <div className="inline-btns">
               {/* <Link to={`/details/${card.id}/edit`} > */}
-              <button onClick={openModal}>
-                <FontAwesomeIcon icon={faEdit} size="lg" className="edit-button"/>
-              </button>
+              {/* <button onClick={openModal} className="openmodal-edit-btn"> */}
+                <FontAwesomeIcon onClick={openModal} icon={faEdit} size="lg" className="edit-button"/>
+              {/* </button> */}
               {/* </Link> */}
               <Modal
                 isOpen={modalIsOpen}
-                onAfterOpen={afterOpenModal}
+                // onAfterOpen={afterOpenModal}
                 onRequestClose={closeModal}
                 style={customStyles}
               >
-                <EditCard />
-                <button onClick={closeModal}>close</button>
+                <EditCard
+                  closeModal={closeModal}
+                  setToggle={setToggle}
+                />
+                {/* <button onClick={closeModal}>Submit</button> */}
               </Modal>
 
 

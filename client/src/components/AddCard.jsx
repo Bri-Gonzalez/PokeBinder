@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useState } from "react";
-import { useHistory } from "react-router";
+// import { useHistory } from "react-router";
 import Form from "./Form"
 
 const airtableBase = process.env.REACT_APP_AIRTABLE_BASE;
@@ -12,7 +12,7 @@ const config = {
   }
 };
 
-function AddCard() {
+function AddCard(props) {
   const [title, setTitle] = useState("");
   const [name, setName] = useState("");
   const [date, setDate] = useState("");
@@ -21,7 +21,7 @@ function AddCard() {
   const [description, setDescription] = useState("");
   const [image, setImage] = useState("");
   const [set, setSet] = useState("");
-  const history = useHistory();
+  // const history = useHistory();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -37,7 +37,9 @@ function AddCard() {
     };
     // eslint-disable-next-line
     const res = await axios.post(URL, { fields }, config);
-    history.push("/");
+    props.closeModal();
+    props.setToggle(prevToggle => !prevToggle);
+    // history.push("/");
   }
 
 
