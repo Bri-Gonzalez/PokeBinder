@@ -94,7 +94,7 @@ This app will allow the user to upload their favorite Pokémon cards to a virtua
 | Working Modal for Form      |    H     |      3hrs      |     5hrs      |    5hrs     |
 | CSS Style Form & Modal      |    H     |      2hrs      |     2hrs      |    2hrs     |
 | CSS Style Card Details Page |    H     |      3hrs      |    3.5hrs     |     --      |
-| Responsive App              |    H     |      2hrs      |      --       |     --      |
+| Responsive App              |    H     |      2hrs      |      1hr      |     1hr     |
 | Total                       |          |     41hrs      |      --       |     --      |
 
 ## Dependencies:
