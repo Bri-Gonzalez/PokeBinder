@@ -94,3 +94,30 @@
   align-items: center;
   margin: 20px 20px 0 0;
 }
+
+@media only screen and (max-width: 600px) {
+  .pokemon-card-container {
+    width: 300px;
+    padding: 20px;
+  }
+
+  .details-title {
+    width: 270px;
+  }
+
+  .inline-containers {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .pokemon-card-container {
+    width: 260px;
+    padding: 8px;
+  }
+
+  .details-title {
+    width: 200px;
+  }
+}
