@@ -89,12 +89,12 @@ function Form(props) {
           </option>
         </select>
         <br />
-        <input
+        <textarea
           type="text"
           value={props.description}
           placeholder="Description"
-          onChange={(e) => props.setDescription(e.target.value)}
-        />
+          onChange={(e) => props.setDescription(e.target.value)}>
+        </textarea>
         <br />
         <input
           type="text"
@@ -103,7 +103,9 @@ function Form(props) {
           onChange={(e) => props.setImage(e.target.value)}
         />
         <br />
-        <button className="submit-btn">Save</button>
+        <div className="btn-div">
+          <button className="save-btn">Save</button>
+        </div>
       </form>
     </div>
   )
