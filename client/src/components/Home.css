@@ -1,7 +1,3 @@
-/* html {
-  background-color: #c4efff;
-} */
-
 .home-title {
   background-color: #ff4e4a;
   color: white;
@@ -17,7 +13,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  /* position: relative; */
   margin: auto;
   /* background-color: #c4efff; */
   /* background-color: #18bca2; */
@@ -47,7 +42,6 @@
 }
 
 .card-images-container:hover {
-  /* background-color: #ff8280; */
   transform: scale(1.3);
 }
 
@@ -67,7 +61,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  /* border: 2px solid black; */
 }
 
 .plus-button {
@@ -79,4 +72,40 @@
 
 .plus-button:hover {
   transform: scale(1.2);
+}
+
+@media only screen and (max-width: 780px) {
+  .home-container {
+    width: 700px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .home-title {
+    width: 300px;
+    font-size: 40px;
+  }
+
+  .home-container {
+    width: 300px;
+  }
+
+  .image {
+    height: 330px;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .home-title {
+    width: 250px;
+    font-size: 40px;
+  }
+
+  .home-container {
+    width: 250px;
+  }
+
+  .image {
+    height: 290px;
+  }
 }
