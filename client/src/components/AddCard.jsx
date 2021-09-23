@@ -47,7 +47,7 @@ function AddCard(props) {
       const res = await axios.post(URL, { fields }, config);
       props.closeModal();
       props.setToggle(prevToggle => !prevToggle);
-    } else { alert("please fill out all fields")}
+    } else { alert("Please fill out all fields")}
   }
 
 
