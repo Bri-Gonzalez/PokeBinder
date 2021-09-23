@@ -13,8 +13,8 @@ const config = {
 
 function EditCard(props) {
   
-  const [title, setTitle] = useState("");
-  const [name, setName] = useState("");
+  const [card, setCard] = useState("");
+  const [pokemon, setPokemon] = useState("");
   const [date, setDate] = useState("");
   const [obtained, setObtained] = useState("");
   const [type, setType] = useState("");
@@ -27,8 +27,8 @@ function EditCard(props) {
     const fetchToEdit = async () => {
       const res = await axios.get(`${URL}/${id}`, config);
       const { fields } = res.data;
-      setTitle(fields.title);
-      setName(fields.name);
+      setCard(fields.card);
+      setPokemon(fields.pokemon);
       setDate(fields.date);
       setObtained(fields.obtained);
       setType(fields.type);
@@ -43,8 +43,8 @@ function EditCard(props) {
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (
-      title !== "" &&
-      name !== "" &&
+      card !== "" &&
+      pokemon !== "" &&
       date !== "" &&
       obtained !== "" &&
       type !== "" &&
@@ -53,8 +53,8 @@ function EditCard(props) {
       set !== ""
     ) {
       const fields = {
-        title,
-        name,
+        card,
+        pokemon,
         date,
         obtained,
         type,
@@ -66,16 +66,18 @@ function EditCard(props) {
       const res = await axios.put(`${URL}/${id}`, { fields }, config);
       props.closeModal();
       props.setToggle(prevToggle => !prevToggle);
-    } else { alert("Please fill out all fields")}
+    } else {
+      alert("Please fill out all fields")
+    }
   }
 
   return (
     <div>
       <Form
-        title={title}
-        setTitle={setTitle}
-        name={name}
-        setName={setName}
+        card={card}
+        setCard={setCard}
+        pokemon={pokemon}
+        setPokemon={setPokemon}
         date={date}
         setDate={setDate}
         obtained={obtained}

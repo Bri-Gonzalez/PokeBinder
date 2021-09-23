@@ -14,7 +14,12 @@ function DeleteCard(props) {
   }
   return (
     <Link to="/">
-        <FontAwesomeIcon icon={faTrashAlt} onClick={handleDelete} size="lg" className="delete-button" />
+      <FontAwesomeIcon
+        icon={faTrashAlt}
+        onClick={handleDelete}
+        size="lg"
+        className="delete-button"
+      />
     </Link>
   )
 }

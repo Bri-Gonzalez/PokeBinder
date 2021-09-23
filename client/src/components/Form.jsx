@@ -8,16 +8,16 @@ function Form(props) {
         <input
           type="text"
           autoFocus
-          value={props.title}
-          placeholder="Card Title"
-          onChange={(e) => props.setTitle(e.target.value)}
+          value={props.card}
+          placeholder="Card Name"
+          onChange={(e) => props.setCard(e.target.value)}
         />
         <br />
         <input
           type="text"
-          value={props.name}
+          value={props.pokemon}
           placeholder="Pokémon Name"
-          onChange={(e) => props.setName(e.target.value)}
+          onChange={(e) => props.setPokemon(e.target.value)}
         />
         <br />
         <input

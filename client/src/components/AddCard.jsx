@@ -12,8 +12,9 @@ const config = {
 };
 
 function AddCard(props) {
-  const [title, setTitle] = useState("");
-  const [name, setName] = useState("");
+  
+  const [card, setCard] = useState("");
+  const [pokemon, setPokemon] = useState("");
   const [date, setDate] = useState("");
   const [obtained, setObtained] = useState("");
   const [type, setType] = useState("");
@@ -24,8 +25,8 @@ function AddCard(props) {
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (
-      title !== "" &&
-      name !== "" &&
+      card !== "" &&
+      pokemon !== "" &&
       date !== "" &&
       obtained !== "" &&
       type !== "" &&
@@ -34,8 +35,8 @@ function AddCard(props) {
       set !== ""
     ) {
       const fields = {
-        title,
-        name,
+        card,
+        pokemon,
         date,
         obtained,
         type,
@@ -47,17 +48,19 @@ function AddCard(props) {
       const res = await axios.post(URL, { fields }, config);
       props.closeModal();
       props.setToggle(prevToggle => !prevToggle);
-    } else { alert("Please fill out all fields")}
+    } else {
+      alert("Please fill out all fields")
+    }
   }
 
 
   return (
     <div>
       <Form
-        title={title}
-        setTitle={setTitle}
-        name={name}
-        setName={setName}
+        card={card}
+        setCard={setCard}
+        pokemon={pokemon}
+        setPokemon={setPokemon}
         date={date}
         setDate={setDate}
         obtained={obtained}

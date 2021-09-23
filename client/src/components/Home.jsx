@@ -8,6 +8,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlus } from "@fortawesome/free-solid-svg-icons";
 import BeatLoader from "react-spinners/BeatLoader";
 
+//-----------------------------------------------------//
+
 const customStyles = {
   content: {
     top: "50%",
@@ -56,7 +58,12 @@ function Home() {
     <div>
       <h1 className="home-title">PokéBinder</h1>
       <div className="plus-btn-container">
-        <FontAwesomeIcon onClick={openModal} icon={faPlus} size="sm" className="plus-button"/>
+        <FontAwesomeIcon
+          onClick={openModal}
+          icon={faPlus}
+          size="sm"
+          className="plus-button"
+        />
         <Modal
           isOpen={modalIsOpen}
           onRequestClose={closeModal}
@@ -74,7 +81,7 @@ function Home() {
             return (
               <div className="card-images-container" key={img.id}>
                 <Link to={`/details/${img.id}`} className="card-image">
-                  <img src={img.fields.image} alt={img.fields.title} className="image" />
+                  <img src={img.fields.image} alt={img.fields.card} className="image" />
                 </Link>
               </div>
             );
