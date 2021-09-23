@@ -48,14 +48,15 @@ This app will allow the user to upload their favorite Pokémon cards to a virtua
 #### PostMVP
 
 - Allow user to upload an image taken on phone to app
-- Allow user to a tag if card is up for trading
-- On the homepage have the background of each Pokémon card name be the color of the Pokémon's element type.
+  OR
+- Use a second API to display the card images from rather than having the user upload an image URL.
+
+  - [Pokémon TCG API](https://dev.pokemontcg.io/)
+
+- Allow user to add a tag if the Pokécard is up for trade
+- Logic for setting the background color of the Pokémon's type to match the element color (example "Lightning" => yellow)
 - Add a search bar to allow user to search for a specific Pokémon card.
 - Add cards to favorite
-- Use a second API to display the card images from rather than having the user upload an image URL.
-  - [Pokémon TCG API](https://dev.pokemontcg.io/)
-- Add third API to display a sprite of the Pokémon on the homepage card names:
-  - [PokéAPI](https://pokeapi.co/)
 
 ## Project Schedule
 
@@ -95,6 +96,14 @@ This app will allow the user to upload their favorite Pokémon cards to a virtua
 | CSS Style Card Details Page |    H     |      3hrs      |    3.5hrs     |     --      |
 | Responsive App              |    H     |      2hrs      |      --       |     --      |
 | Total                       |          |     41hrs      |      --       |     --      |
+
+## Dependencies:
+
+- [react-router-dom](https://reactrouter.com/web/guides/quick-start)
+- [axios](https://www.npmjs.com/package/axios)
+- [react-modal](https://www.npmjs.com/package/react-modal)
+- [react-spinners](https://www.npmjs.com/package/react-spinners)
+- [Font Awesome](https://fontawesome.com/v5.15/icons?d=gallery&p=2)
 
 ## SWOT Analysis
 

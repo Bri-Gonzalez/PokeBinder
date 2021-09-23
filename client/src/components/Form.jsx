@@ -28,7 +28,7 @@ function Form(props) {
         />
         <br />
         <select name="type" id="type" onChange={(e) => props.setType(e.target.value)}>
-          <option>Select Type</option>
+          <option>Select Element Type</option>
           <option value={props.type}>
             Grass
           </option>
