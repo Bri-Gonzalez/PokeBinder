@@ -1,5 +1,4 @@
 import './Home.css';
-// import React from "react";
 import Modal from "react-modal";
 import AddCard from "./AddCard";
 import { useEffect, useState } from "react";
@@ -7,6 +6,7 @@ import { Link } from "react-router-dom";
 import { fetchCardImages } from "../services";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlus } from "@fortawesome/free-solid-svg-icons";
+import BeatLoader from "react-spinners/BeatLoader";
 
 const customStyles = {
   content: {
@@ -28,39 +28,36 @@ Modal.setAppElement('#root');
 function Home() {
   const [cardImages, setCardImages] = useState([]);
   const [modalIsOpen, setIsOpen] = useState(false);
+  const [loading, setLoading] = useState(true);
   const [toggle, setToggle] = useState(false);
 
   function openModal() {
     setIsOpen(true);
   }
 
-  // function afterOpenModal() {
-  // }
-
   function closeModal() {
     setIsOpen(false);
   }
 
-
   useEffect(() => {
     const getCardImages = async () => {
       setCardImages(await fetchCardImages());
+      setLoading(false);
     };
     getCardImages();
   }, [toggle])
+
+  if (loading) {
+    return <BeatLoader />;
+  }
 
   return (
     <div>
       <h1 className="home-title">PokéBinder</h1>
       <div className="plus-btn-container">
-        {/* <Link to="/add"> */}
-        {/* <button onClick={openModal}> */}
-            <FontAwesomeIcon onClick={openModal} icon={faPlus} size="sm" className="plus-button"/>
-        {/* </button> */}
-        {/* </Link> */}
+        <FontAwesomeIcon onClick={openModal} icon={faPlus} size="sm" className="plus-button"/>
         <Modal
           isOpen={modalIsOpen}
-          // onAfterOpen={afterOpenModal}
           onRequestClose={closeModal}
           style={customStyles}
         >
@@ -68,9 +65,7 @@ function Home() {
             closeModal={closeModal}
             setToggle={setToggle}
           />
-          {/* <button onClick={closeModal}>Submit</button> */}
         </Modal>
-        
       </div>
       <div className="home-container">
         <div className="card-container">
