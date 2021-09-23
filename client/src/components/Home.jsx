@@ -26,6 +26,7 @@ Modal.setAppElement('#root');
 //-----------------------------------------------------//
 
 function Home() {
+  
   const [cardImages, setCardImages] = useState([]);
   const [modalIsOpen, setIsOpen] = useState(false);
   const [loading, setLoading] = useState(true);

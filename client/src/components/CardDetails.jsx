@@ -1,12 +1,10 @@
 import './CardDetails.css';
-// import React from "react";
 import DeleteCard from './DeleteCard';
 import Modal from "react-modal";
 import EditCard from "./EditCard";
 import { useState, useEffect } from "react";
 import { useParams } from "react-router";
 import { fetchCardDetails } from "../services";
-// import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEdit } from "@fortawesome/free-solid-svg-icons";
 import BeatLoader from "react-spinners/BeatLoader";
@@ -29,6 +27,7 @@ Modal.setAppElement('#root');
 //-----------------------------------------------------//
 
 function CardDetails() {
+  
   const [card, setCard] = useState({});
   const { id } = useParams();
   const [loading, setLoading] = useState(true);
@@ -38,9 +37,6 @@ function CardDetails() {
   function openModal() {
     setIsOpen(true);
   }
-
-  // function afterOpenModal() {
-  // }
 
   function closeModal() {
     setIsOpen(false);
@@ -59,10 +55,8 @@ function CardDetails() {
     return <BeatLoader />;
   }
 
-
   return (
     <div>
-      {/* <h1 className="details-title">{card?.fields?.title}</h1> */}
       <div className="pokemon-card-container">
         <h1 className="details-title">{card?.fields?.title}</h1>
         <div className="inline-containers">
@@ -85,14 +79,9 @@ function CardDetails() {
               <p><b>Description:</b><br />{card?.fields?.description}</p>
             </div>
             <div className="inline-btns">
-              {/* <Link to={`/details/${card.id}/edit`} > */}
-              {/* <button onClick={openModal} className="openmodal-edit-btn"> */}
-                <FontAwesomeIcon onClick={openModal} icon={faEdit} size="lg" className="edit-button"/>
-              {/* </button> */}
-              {/* </Link> */}
+              <FontAwesomeIcon onClick={openModal} icon={faEdit} size="lg" className="edit-button"/>
               <Modal
                 isOpen={modalIsOpen}
-                // onAfterOpen={afterOpenModal}
                 onRequestClose={closeModal}
                 style={customStyles}
               >
@@ -100,10 +89,7 @@ function CardDetails() {
                   closeModal={closeModal}
                   setToggle={setToggle}
                 />
-                {/* <button onClick={closeModal}>Submit</button> */}
               </Modal>
-
-
               <DeleteCard id={id} />
             </div>
           </div>
