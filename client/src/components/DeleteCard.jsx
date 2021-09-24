@@ -55,14 +55,15 @@ function DeleteCard(props) {
         onRequestClose={closeModal}
         style={customStyles}
       >
+        <p className="confirm-delete">Confirm delete</p>
         <div className="confirm-border">
-          <h3 className="confirm-message">Are you sure you want to delete?</h3>
+          <p className="confirm-message">Are you sure you would like to delete this card?</p>
           <div className="inline-delete-btns">
             <div>
-              <button onClick={handleDelete}>Yes</button>
+              <button onClick={handleDelete} className="yes-btn">Yes</button>
             </div>
             <div>
-              <button onClick={closeModal}>No</button>
+              <button onClick={closeModal} className="no-btn">No</button>
             </div>
           </div>
         </div>
