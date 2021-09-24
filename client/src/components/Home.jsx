@@ -1,6 +1,7 @@
 import './Home.css';
-import Modal from "react-modal";
 import AddCard from "./AddCard";
+import Modal from "react-modal";
+import ReactPaginate from "react-paginate";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { fetchCardImages } from "../services";
@@ -33,14 +34,9 @@ function Home() {
   const [modalIsOpen, setIsOpen] = useState(false);
   const [loading, setLoading] = useState(true);
   const [toggle, setToggle] = useState(false);
+  const [pageNumber, setPageNumber] = useState(0);
 
-  function openModal() {
-    setIsOpen(true);
-  }
-
-  function closeModal() {
-    setIsOpen(false);
-  }
+  //----------------AXIOS----------------//
 
   useEffect(() => {
     const getCardImages = async () => {
@@ -50,9 +46,46 @@ function Home() {
     getCardImages();
   }, [toggle])
 
+  //----------------PAGINATION----------------//
+  
+  const cardsPerPage = 10;
+  const pagesVisited = pageNumber * cardsPerPage;
+  const pageCount = Math.ceil(cardImages.length / cardsPerPage)
+
+  const displayCards = cardImages
+    .slice(pagesVisited, pagesVisited + cardsPerPage)
+    .map(img => {
+      return (
+        <div className="card-images-container" key={img.id}>
+          <Link to={`/details/${img.id}`} className="card-image">
+            <img src={img.fields.image} alt={img.fields.card} className="image" />
+          </Link>
+        </div>
+      );
+    })
+
+  const changePage = ({ selected }) => {
+    setPageNumber(selected)
+  };
+
+   //----------------MODAL----------------//
+
+  function openModal() {
+    setIsOpen(true);
+  }
+
+  function closeModal() {
+    setIsOpen(false);
+  }
+
+  //----------------LOADING----------------//
+
+
   if (loading) {
     return <BeatLoader />;
   }
+
+  //----------------RETURN----------------//
 
   return (
     <div>
@@ -77,7 +110,20 @@ function Home() {
       </div>
       <div className="home-container">
         <div className="card-container">
-          {cardImages.map(img => {
+          {displayCards}
+          <br /> 
+          <ReactPaginate
+            previousLabel={"<"}
+            nextLabel={">"}
+            pageCount={pageCount}
+            onPageChange={changePage}
+            containerClassName={"pagination-btns"}
+            previousLinkClassName={"prev-btn"}
+            nextLinkClassName={"next-btn"}
+            disabledClassName={"disabled"}
+            activeClassName={"active"}
+          />
+          {/* {cardImages.map(img => {
             return (
               <div className="card-images-container" key={img.id}>
                 <Link to={`/details/${img.id}`} className="card-image">
@@ -85,7 +131,7 @@ function Home() {
                 </Link>
               </div>
             );
-          })}
+          })} */}
         </div>
       </div>
     </div>

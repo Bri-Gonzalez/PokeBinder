@@ -74,9 +74,36 @@
   transform: scale(1.2);
 }
 
+.pagination-btns {
+  width: 70%;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin: 40px 40px 20px 0px;
+}
+
+.pagination-btns a {
+  padding: 4px 10px;
+  margin: 10px;
+  border-radius: 10px;
+  /* border: 2px solid #ff4e4a; */
+  /* background-color: black; */
+  /* color: white; */
+  border: 2px solid black;
+  color: black;
+  font-family: "Boogaloo", sans-serif;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.pagination-btn:hover {
+}
+
 @media only screen and (max-width: 780px) {
   .home-container {
-    width: 700px;
+    width: 600px;
+    margin: 0 auto;
   }
 }
 
