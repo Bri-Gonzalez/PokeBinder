@@ -65,7 +65,8 @@ function Form(props) {
         </select>
         <br />
         <input
-          type="text"
+          type="date"
+          autoComplete="on"
           value={props.date}
           placeholder="Date Collected"
           onChange={(e) => props.setDate(e.target.value)}

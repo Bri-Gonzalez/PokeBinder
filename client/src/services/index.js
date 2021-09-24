@@ -23,3 +23,4 @@ export const deleteButton = async (id) => {
   const res = await axios.delete(`${URL}/${id}`, config);
   return res.data;
 }
+

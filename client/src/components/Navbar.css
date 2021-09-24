@@ -13,6 +13,7 @@
 
 .top-nav a:hover {
   color: #ffd4d4;
+  cursor: pointer;
 }
 
 .top-nav-right {

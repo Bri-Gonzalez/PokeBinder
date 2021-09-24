@@ -36,6 +36,18 @@ textarea {
   font-size: 15px;
 }
 
+input[type="date"] {
+  width: 300px;
+  padding: 5px 15px;
+  margin: 4px 0 4px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-family: "itim", sans-serif;
+  font-size: 15px;
+}
+
 textarea {
   height: 90px;
 }

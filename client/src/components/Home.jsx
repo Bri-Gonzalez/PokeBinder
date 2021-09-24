@@ -1,5 +1,6 @@
 import './Home.css';
 import AddCard from "./AddCard";
+// import SearchCard from "./SearchCard";
 import Modal from "react-modal";
 import ReactPaginate from "react-paginate";
 import { useEffect, useState } from "react";
@@ -89,6 +90,7 @@ function Home() {
 
   return (
     <div>
+      {/* <SearchCard /> */}
       <h1 className="home-title">PokéBinder</h1>
       <div className="plus-btn-container">
         <FontAwesomeIcon

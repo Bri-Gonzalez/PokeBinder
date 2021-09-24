@@ -7,6 +7,7 @@ function Navbar() {
       <a className="pokeapps-link" href="https://bri-gonzalez.github.io/PokeApps/index.html">PokéApps</a>
       <div className="top-nav-right">
         <Link to="/">PokéBinder</Link>
+        <Link to="/search">Search</Link>
       </div>
     </div>
   )
