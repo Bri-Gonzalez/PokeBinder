@@ -3,7 +3,7 @@ import SearchCard from "./SearchCard";
 
 function Search() {
   return (
-    <div className="searched-container">
+    <div className="search-container">
       <SearchCard />
     </div>
   )

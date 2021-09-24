@@ -26,3 +26,20 @@
   font-family: "Boogaloo", sans-serif;
   font-size: 25px;
 }
+
+@media only screen and (max-width: 370px) {
+  .top-nav a {
+    padding: 10px;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .top-nav-right {
+    font-size: 18px;
+  }
+
+  .pokeapps-link {
+    font-family: "Boogaloo", sans-serif;
+    font-size: 22px;
+  }
+}

@@ -45,7 +45,7 @@ function SearchCard() {
         <input
           onChange={(e) => setSearch(e.target.value)}
           className="search-input"
-          placeholder="Find a Card"
+          placeholder="Search by Pokémon"
         />
         {/* <br /> */}
         <button className="search-btn">Search</button>

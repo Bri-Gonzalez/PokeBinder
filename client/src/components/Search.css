@@ -1,26 +1,4 @@
-.search-input {
-  width: 220px;
-  padding: 5px 15px;
-  margin: 4px 0 4px 0;
-  /* display: inline-block; */
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  font-family: "itim", sans-serif;
-  font-size: 15px;
-}
-
-.search-btn {
-  width: 100px;
-  padding: 4px 15px;
-  margin: 4px 0 4px 0;
-  font-family: "itim", sans-serif;
-  font-size: 15px;
-  margin: 10px;
-  cursor: pointer;
-}
-
-.searched-container {
+.search-container {
   width: 800px;
   display: flex;
   justify-content: center;
@@ -28,6 +6,33 @@
   margin: auto;
   border-radius: 20px;
   padding: 10px;
+}
+
+.search-input {
+  width: 250px;
+  padding: 7px 15px;
+  margin: 4px 0 4px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-family: "itim", sans-serif;
+  font-size: 15px;
+  border-radius: 5px;
+  border: 2px solid black;
+  background-color: transparent;
+}
+
+.search-btn {
+  width: 100px;
+  padding: 7px 15px;
+  margin: 4px 0 4px 0;
+  font-family: "itim", sans-serif;
+  font-size: 15px;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 2px solid black;
+  background-color: transparent;
 }
 
 .searched-card-container {
@@ -41,9 +46,8 @@
   box-shadow: 3px 5px 10px rgb(89, 89, 89);
 }
 
-.searched-card-image {
-  height: 200px;
-  margin: auto;
+.searched-card-container:hover {
+  transform: scale(1.2);
 }
 
 .searched-card {
@@ -51,4 +55,49 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.searched-card-image {
+  height: 200px;
+  margin: auto;
+}
+
+@media only screen and (max-width: 600px) {
+  .search-container {
+    width: 300px;
+  }
+
+  .searched-card-image {
+    height: 330px;
+  }
+
+  .searched-card-container:hover {
+    transform: scale(1.1);
+  }
+
+  .search-input {
+    width: 300px;
+    padding: 10px 15px;
+    font-size: 17px;
+  }
+
+  .search-btn {
+    margin: 10px;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .search-container {
+    width: 250px;
+  }
+
+  .searched-card-image {
+    height: 310px;
+  }
+
+  .search-input {
+    width: 250px;
+    padding: 10px 15px;
+    font-size: 17px;
+  }
 }

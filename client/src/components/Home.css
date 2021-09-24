@@ -96,7 +96,6 @@
 }
 
 .pagination-btns a:hover {
-  /* background-color: #ffd4d4; */
   background-color: #ff4e4a;
   color: white;
   border: 2px solid #ff4e4a;
@@ -122,6 +121,10 @@
   .image {
     height: 330px;
   }
+
+  .card-images-container:hover {
+    transform: scale(1.1);
+  }
 }
 
 @media only screen and (max-width: 300px) {
@@ -136,5 +139,9 @@
 
   .image {
     height: 290px;
+  }
+
+  .card-images-container:hover {
+    transform: scale(1.1);
   }
 }
