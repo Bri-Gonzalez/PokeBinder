@@ -1,0 +1,19 @@
+.footer {
+  border-top: 2px solid black;
+  overflow: hidden;
+  margin-top: 10px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.footer img {
+  height: 25px;
+  margin-top: 10px;
+}
+
+.footer img:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}

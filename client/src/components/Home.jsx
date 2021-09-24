@@ -125,15 +125,6 @@ function Home() {
             // disabledClassName={"disabled"}
             // activeClassName={"active"}
           />
-          {/* {cardImages.map(img => {
-            return (
-              <div className="card-images-container" key={img.id}>
-                <Link to={`/details/${img.id}`} className="card-image">
-                  <img src={img.fields.image} alt={img.fields.card} className="image" />
-                </Link>
-              </div>
-            );
-          })} */}
         </div>
       </div>
     </div>

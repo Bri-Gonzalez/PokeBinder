@@ -5,6 +5,7 @@ import EditCard from "./components/EditCard";
 import Search from "./components/Search";
 import CardDetails from "./components/CardDetails";
 import AddCard from "./components/AddCard";
+import Footer from "./components/Footer";
 import { Route } from "react-router-dom";
 
 function App() {
@@ -26,6 +27,8 @@ function App() {
       <Route path ="/search">
         <Search />
       </Route>
+      <br />
+      <Footer />
     </div>
   );
 }

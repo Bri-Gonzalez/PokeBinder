@@ -1,11 +1,11 @@
 .App {
   text-align: center;
   background-color: #fef5e1;
-  /* background-color: #c4efff; */
-  /* background-color: #18bca2; */
+  min-height: 100vh;
 }
 
 body {
   min-height: 100vh;
   background-color: #fef5e1;
+  position: relative;
 }

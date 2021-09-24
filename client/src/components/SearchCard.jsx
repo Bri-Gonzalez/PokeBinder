@@ -47,7 +47,6 @@ function SearchCard() {
           className="search-input"
           placeholder="Search by Pokémon"
         />
-        {/* <br /> */}
         <button className="search-btn">Search</button>
       </form>
       {cards.map(card => {
