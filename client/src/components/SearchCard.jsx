@@ -42,8 +42,13 @@ function SearchCard() {
   return (
     <div>
       <form onSubmit={handleSubmit}>
-        <input onChange={(e) => setSearch(e.target.value)} />
-        <button>Find Card!</button>
+        <input
+          onChange={(e) => setSearch(e.target.value)}
+          className="search-input"
+          placeholder="Find a Card"
+        />
+        {/* <br /> */}
+        <button className="search-btn">Search</button>
       </form>
       {cards.map(card => {
             return (

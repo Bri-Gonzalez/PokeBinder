@@ -1,3 +1,25 @@
+.search-input {
+  width: 220px;
+  padding: 5px 15px;
+  margin: 4px 0 4px 0;
+  /* display: inline-block; */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-family: "itim", sans-serif;
+  font-size: 15px;
+}
+
+.search-btn {
+  width: 100px;
+  padding: 4px 15px;
+  margin: 4px 0 4px 0;
+  font-family: "itim", sans-serif;
+  font-size: 15px;
+  margin: 10px;
+  cursor: pointer;
+}
+
 .searched-container {
   width: 800px;
   display: flex;
