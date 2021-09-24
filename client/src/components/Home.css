@@ -72,6 +72,7 @@
 
 .plus-button:hover {
   transform: scale(1.2);
+  cursor: pointer;
 }
 
 .pagination-btns {
@@ -87,9 +88,6 @@
   padding: 4px 10px;
   margin: 10px;
   border-radius: 10px;
-  /* border: 2px solid #ff4e4a; */
-  /* background-color: black; */
-  /* color: white; */
   border: 2px solid black;
   color: black;
   font-family: "Boogaloo", sans-serif;
@@ -97,7 +95,11 @@
   cursor: pointer;
 }
 
-.pagination-btn:hover {
+.pagination-btns a:hover {
+  /* background-color: #ffd4d4; */
+  background-color: #ff4e4a;
+  color: white;
+  border: 2px solid #ff4e4a;
 }
 
 @media only screen and (max-width: 780px) {

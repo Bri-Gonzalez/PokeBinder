@@ -118,10 +118,10 @@ function Home() {
             pageCount={pageCount}
             onPageChange={changePage}
             containerClassName={"pagination-btns"}
-            previousLinkClassName={"prev-btn"}
-            nextLinkClassName={"next-btn"}
-            disabledClassName={"disabled"}
-            activeClassName={"active"}
+            // previousLinkClassName={"prev-btn"}
+            // nextLinkClassName={"next-btn"}
+            // disabledClassName={"disabled"}
+            // activeClassName={"active"}
           />
           {/* {cardImages.map(img => {
             return (

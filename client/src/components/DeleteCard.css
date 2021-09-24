@@ -5,6 +5,7 @@
 
 .delete-button:hover {
   transform: scale(1.2);
+  cursor: pointer;
 }
 
 .confirm-delete {
