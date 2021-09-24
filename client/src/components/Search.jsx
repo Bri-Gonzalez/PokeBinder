@@ -1,9 +1,10 @@
+import './Search.css';
 import React from 'react'
 import SearchCard from "./SearchCard";
 
 function Search() {
   return (
-    <div>
+    <div className="searched-container">
       <SearchCard />
     </div>
   )

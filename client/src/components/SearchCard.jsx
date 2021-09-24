@@ -1,3 +1,4 @@
+import './Search.css';
 import { useState, useEffect } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
@@ -42,15 +43,15 @@ function SearchCard() {
 
   return (
     <div>
-      <form onSubmit={handleSubmit}>
+      <div onSubmit={handleSubmit}>
         <input onChange={(e) => setSearch(e.target.value)} />
         <button>Find Card!</button>
-      </form>
+      </div>
       {cards.map(card => {
             return (
-              <div key={card.id}>
-                <Link to={`/details/${card.id}`} className="card-image">
-                  <img src={card.fields.image} alt={card.fields.card} className="image" />
+              <div key={card.id} className="searched-card-container">
+                <Link to={`/details/${card.id}`} className="searched-card">
+                  <img src={card.fields.image} alt={card.fields.card} className="searched-card-image" />
                 </Link>
               </div>
             )

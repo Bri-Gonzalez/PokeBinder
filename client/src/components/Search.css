@@ -1,0 +1,32 @@
+.searched-container {
+  width: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.searched-card-container {
+  border-radius: 10px;
+  margin: 35px 15px;
+  padding: 5px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  box-shadow: 3px 5px 10px rgb(89, 89, 89);
+}
+
+.searched-card-image {
+  height: 200px;
+  margin: auto;
+}
+
+.searched-card {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
