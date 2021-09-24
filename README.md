@@ -47,12 +47,8 @@ This app will allow the user to upload their favorite Pokémon cards to a virtua
 
 #### PostMVP
 
-- Allow user to upload an image taken on phone to app
-  OR
-- Use a second API to display the card images from rather than having the user upload an image URL.
-
-  - [Pokémon TCG API](https://dev.pokemontcg.io/)
-
+- Pagination for homepage.
+- Allow user to upload an image taken on phone to app ---OR--- Use a [Pokémon TCG API](https://dev.pokemontcg.io/) to display the card images from rather than having the user upload an image URL.
 - Allow user to add a tag if the Pokécard is up for trade
 - Logic for setting the background color of the Pokémon's type to match the element color (example "Lightning" => yellow)
 - Add a search bar to allow user to search for a specific Pokémon card.
@@ -81,7 +77,6 @@ This app will allow the user to upload their favorite Pokémon cards to a virtua
 | Setting up Components       |    H     |      1hrs      |     .5hrs     |    .5hrs    |
 | Getting API Info to Page    |    H     |      1hrs      |     .5hrs     |    .5hrs    |
 | Clickable Card Names        |    H     |      2hrs      |      1hr      |     1hr     |
-| Pagination for Homepage     |    H     |      3hrs      |      --       |     --      |
 | Card Details Page           |    H     |      3hrs      |      1hr      |     1hr     |
 | Form Creation               |    H     |      3hrs      |     3hrs      |    3hrs     |
 | Add Card Button             |    H     |      1hr       |      1hr      |     1hr     |
@@ -89,13 +84,16 @@ This app will allow the user to upload their favorite Pokémon cards to a virtua
 | Edit Card Button            |    H     |      1hr       |     .5hrs     |    .5hrs    |
 | Delete Card Function        |    H     |      3hrs      |    1.5hrs     |   1.5hrs    |
 | Delete Card Button          |    H     |      1hrs      |     .5hrs     |    .5hrs    |
-| CSS Style Navbar            |    H     |      3hrs      |     .5hrs     |     --      |
-| CSS Style Homepage          |    H     |      3hrs      |     3hrs      |     --      |
+| CSS Style Navbar            |    H     |      3hrs      |     2hrs      |    2hrs     |
+| CSS Style Homepage          |    H     |      3hrs      |     5hrs      |    5hrs     |
 | Working Modal for Form      |    H     |      3hrs      |     5hrs      |    5hrs     |
 | CSS Style Form & Modal      |    H     |      2hrs      |     2hrs      |    2hrs     |
-| CSS Style Card Details Page |    H     |      3hrs      |    3.5hrs     |     --      |
+| CSS Style Card Details Page |    H     |      3hrs      |     5hrs      |    5hrs     |
 | Responsive App              |    H     |      2hrs      |      1hr      |     1hr     |
-| Total                       |          |     41hrs      |      --       |     --      |
+| --POST MVP BELOW--          |   ---    |      ----      |     ----      |    ----     |
+| Pagination for Homepage     |    M     |      3hrs      |     5hrs      |    5hrs     |
+| Confirmation Delete Modal   |    M     |      2hrs      |     2hrs      |    2hrs     |
+| Total                       |          |     43hrs      |      --       |     --      |
 
 ## Dependencies:
 
