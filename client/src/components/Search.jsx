@@ -1,5 +1,4 @@
 import './Search.css';
-import React from 'react'
 import SearchCard from "./SearchCard";
 
 function Search() {

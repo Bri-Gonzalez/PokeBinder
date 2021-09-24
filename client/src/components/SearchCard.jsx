@@ -12,8 +12,6 @@ const config = {
   }
 };
 
-console.log(URL, config)
-
 function SearchCard() {
   const [card, setCard] = useState([]);
   const [cards, setCards] = useState([]);
@@ -43,10 +41,10 @@ function SearchCard() {
 
   return (
     <div>
-      <div onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit}>
         <input onChange={(e) => setSearch(e.target.value)} />
         <button>Find Card!</button>
-      </div>
+      </form>
       {cards.map(card => {
             return (
               <div key={card.id} className="searched-card-container">
