@@ -16,9 +16,8 @@
 }
 
 .confirm-border {
-  border: 1px solid white;
+  border-top: 1px solid white;
   padding: 15px;
-  border-radius: 10px;
   width: 250px;
 }
 
@@ -43,23 +42,24 @@
   height: 35px;
   font-family: "itim", sans-serif;
   font-size: 22px;
-  border: 1px solid white;
   border-radius: 5px;
 }
 
 .no-btn:hover,
 .yes-btn:hover {
-  transform: scale(1.2);
-  /* box-shadow: 1px 3px 10px black; */
+  transform: scale(1.1);
 }
 
 .no-btn {
-  background-color: #fef8d9;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
 }
 
 .yes-btn {
   background-color: #ff4e4a;
   color: white;
+  border: none;
 }
 
 @media only screen and (max-width: 320px) {
