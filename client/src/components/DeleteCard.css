@@ -21,6 +21,11 @@
   border-top: 1px solid black;
   padding: 15px;
   width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .confirm-message {
@@ -36,7 +41,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
+  /* text-align: center;
+  margin: auto; */
 }
 
 .no-btn,

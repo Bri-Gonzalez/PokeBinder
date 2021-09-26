@@ -42,17 +42,18 @@ function DeleteCard(props) {
 
   return (
     <div>
-        <FontAwesomeIcon
-          icon={faTrashAlt}
-          onClick={openModal}
-          size="lg"
-          className="delete-button"
-        />
+      <FontAwesomeIcon
+        icon={faTrashAlt}
+        onClick={openModal}
+        size="lg"
+        className="delete-button"
+      />
       <Modal
         isOpen={modalIsOpen}
         onRequestClose={closeModal}
         style={customStyles}
       >
+      <div>
         <p className="confirm-delete">Confirm delete</p>
         <div className="confirm-border">
           <p className="confirm-message">Whoa Trainer! Are you sure you would like to delete this card?</p>
@@ -65,6 +66,7 @@ function DeleteCard(props) {
             </div>
           </div>
         </div>
+      </div>
       </Modal>
     </div>
   )
