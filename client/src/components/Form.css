@@ -3,13 +3,15 @@
   justify-content: center;
   align-items: center;
   width: 350px;
+  text-align: center;
 }
 
 .form-title {
   font-family: "itim", sans-serif;
   font-size: 25px;
   margin: 0 0 10px 0;
-  color: white;
+  /* color: white; */
+  color: black;
   text-align: center;
 }
 
@@ -30,27 +32,23 @@ textarea {
   padding: 5px 15px;
   margin: 4px 0 4px 0;
   display: inline-block;
-  border: 1px solid #ccc;
+  /* border: 1px solid #ccc; */
+  border: 2px solid black;
   border-radius: 4px;
   box-sizing: border-box;
   font-family: "itim", sans-serif;
   font-size: 15px;
+  background-color: transparent;
 }
 
 textarea {
   height: 90px;
 }
 
-input[type="file"] {
+.file {
   font-family: "itim", sans-serif;
   font-size: 15px;
-  color: white;
-}
-
-label {
-  font-family: "itim", sans-serif;
-  font-size: 18px;
-  color: white;
+  margin: 4px 0 4px 0;
 }
 
 .save-btn {
@@ -59,6 +57,14 @@ label {
   font-family: "itim", sans-serif;
   font-size: 15px;
   margin: 10px;
+  cursor: pointer;
+  background-color: transparent;
+  border: 2px solid black;
+  border-radius: 4px;
+}
+
+.save-btn:hover {
+  transform: scale(1.1);
   cursor: pointer;
 }
 

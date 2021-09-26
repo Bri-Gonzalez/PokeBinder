@@ -9,20 +9,21 @@
 }
 
 .confirm-delete {
-  color: white;
+  /* color: white; */
   font-family: "itim", sans-serif;
   font-size: 30px;
   margin: 0 0 7px 0;
 }
 
 .confirm-border {
-  border-top: 1px solid white;
+  /* border-top: 1px solid white; */
+  border-top: 1px solid black;
   padding: 15px;
   width: 250px;
 }
 
 .confirm-message {
-  color: white;
+  /* color: white; */
   font-family: "itim", sans-serif;
   font-size: 21px;
   margin-top: 0px;
@@ -52,8 +53,9 @@
 
 .no-btn {
   background-color: transparent;
-  border: 1px solid white;
-  color: white;
+  /* border: 1px solid white; */
+  border: 2px solid black;
+  /* color: white; */
 }
 
 .yes-btn {

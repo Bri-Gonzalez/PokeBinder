@@ -3,7 +3,6 @@ import Modal from "react-modal";
 import { useHistory } from "react-router";
 import { useState } from "react";
 import { deleteButton } from "../services";
-// import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTrashAlt } from "@fortawesome/free-solid-svg-icons";
 
@@ -15,8 +14,9 @@ const customStyles = {
     bottom: "auto",
     marginRight: "-50%",
     transform: "translate(-50%, -50%)",
-    backgroundColor: "#197092",
+    backgroundColor: "#fef5e1",
     borderRadius: "10px",
+    border: "2px solid black",
   },
 };
 
@@ -42,14 +42,12 @@ function DeleteCard(props) {
 
   return (
     <div>
-      {/* <Link to="/"> */}
         <FontAwesomeIcon
           icon={faTrashAlt}
           onClick={openModal}
           size="lg"
           className="delete-button"
         />
-      {/* </Link> */}
       <Modal
         isOpen={modalIsOpen}
         onRequestClose={closeModal}
@@ -57,7 +55,7 @@ function DeleteCard(props) {
       >
         <p className="confirm-delete">Confirm delete</p>
         <div className="confirm-border">
-          <p className="confirm-message">Are you sure you would like to delete this card?</p>
+          <p className="confirm-message">Whoa Trainer! Are you sure you would like to delete this card?</p>
           <div className="inline-delete-btns">
             <div>
               <button onClick={handleDelete} className="yes-btn">Yes</button>

@@ -7,7 +7,7 @@
   float: left;
   color: white;
   text-align: center;
-  padding: 10px 10px;
+  /* padding: 10px 10px; */
   text-decoration: none;
 }
 
@@ -25,10 +25,27 @@
 .pokeapps-link {
   font-family: "Boogaloo", sans-serif;
   font-size: 25px;
+  padding: 10px;
+}
+
+.pokebinder-link {
+  padding: 10px 10px;
+}
+
+.search-link {
+  padding: 10px 20px 10px 10px;
 }
 
 @media only screen and (max-width: 370px) {
-  .top-nav a {
+  .pokeapps-link {
+    padding: 10px;
+  }
+
+  .pokebinder-link {
+    padding: 10px;
+  }
+
+  .search-link {
     padding: 10px;
   }
 }

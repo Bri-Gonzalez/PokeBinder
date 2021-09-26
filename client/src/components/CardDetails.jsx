@@ -19,8 +19,9 @@ const customStyles = {
     bottom: "auto",
     marginRight: "-50%",
     transform: "translate(-50%, -50%)",
-    backgroundColor: "#197092",
+    backgroundColor: "#fef5e1",
     borderRadius: "10px",
+    border: "2px solid black",
   },
 };
 
