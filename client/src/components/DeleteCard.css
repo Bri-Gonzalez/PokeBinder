@@ -35,7 +35,8 @@
 .inline-delete-btns {
   display: flex;
   justify-content: center;
-  align-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .no-btn,
@@ -46,6 +47,7 @@
   font-family: "itim", sans-serif;
   font-size: 22px;
   border-radius: 5px;
+  text-align: center;
 }
 
 .no-btn:hover,
@@ -54,7 +56,6 @@
 }
 
 .no-btn {
-  text-align: center;
   background-color: transparent;
   /* border: 1px solid white; */
   border: 2px solid black;
@@ -63,7 +64,6 @@
 }
 
 .yes-btn {
-  text-align: center;
   background-color: #ff4e4a;
   color: white;
   border: none;
