@@ -41,8 +41,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  /* text-align: center;
-  margin: auto; */
 }
 
 .no-btn,
@@ -54,6 +52,9 @@
   font-size: 22px;
   border-radius: 5px;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .no-btn:hover,
