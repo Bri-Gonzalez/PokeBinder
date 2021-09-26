@@ -111,13 +111,15 @@ function Form(props) {
           onChange={(e) => props.setDescription(e.target.value)}>
         </textarea>
         <br />
-        <input
-          type="file"
-          name="file"
-          className="file"
-          placeholder="Upload Image"
-          onChange={uploadImage}
-        />
+        <div className="upload-container">
+          <input
+            type="file"
+            name="file"
+            className="file"
+            placeholder="Upload Image"
+            onChange={uploadImage}
+          />
+        </div>
         <br />
         <div className="btn-div">
           <button className="save-btn">Save</button>
