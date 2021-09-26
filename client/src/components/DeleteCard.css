@@ -10,6 +10,7 @@
 
 .confirm-delete {
   /* color: white; */
+  color: black;
   font-family: "itim", sans-serif;
   font-size: 30px;
   margin: 0 0 7px 0;
@@ -24,6 +25,7 @@
 
 .confirm-message {
   /* color: white; */
+  color: black;
   font-family: "itim", sans-serif;
   font-size: 21px;
   margin-top: 0px;
@@ -52,13 +54,16 @@
 }
 
 .no-btn {
+  text-align: center;
   background-color: transparent;
   /* border: 1px solid white; */
   border: 2px solid black;
   /* color: white; */
+  color: black;
 }
 
 .yes-btn {
+  text-align: center;
   background-color: #ff4e4a;
   color: white;
   border: none;
