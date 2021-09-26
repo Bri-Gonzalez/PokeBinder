@@ -1,6 +1,6 @@
 # Project Overview
 
-## PokéBinder
+## [PokéBinder](https://flamboyant-goldwasser-1c3004.netlify.app/)
 
 ## Project Description
 
@@ -49,24 +49,24 @@ This app will allow the user to upload their favorite Pokémon cards to a virtua
 
 - Pagination for homepage.
 - Allow user to upload an image taken on phone to app ---OR--- Use a [Pokémon TCG API](https://dev.pokemontcg.io/) to display the card images from rather than having the user upload an image URL.
+- Add a search bar to allow user to search for a specific Pokémon card.
 - Allow user to add a tag if the Pokécard is up for trade
 - Logic for setting the background color of the Pokémon's type to match the element color (example "Lightning" => yellow)
-- Add a search bar to allow user to search for a specific Pokémon card.
 - Add cards to favorite
 
 ## Project Schedule
 
-| Day         | Deliverable                                                   | Status     |
-| ----------- | ------------------------------------------------------------- | ---------- |
-| Sept. 16    | Prompt / Wireframes / Proposal Approval                       | Complete   |
-| Sept. 17    | Component Hierarchy / Timeframes / Core Application Structure | Complete   |
-| Sept. 20    | Pseudocode / Actual Code                                      | Complete   |
-| Sept. 21    | Sept. 20 cont'd / Begin CSS                                   | Complete   |
-| Sept. 22    | Initial Clickable Model / CSS Styling                         | Incomplete |
-| Sept. 23    | Complete MVP / Begin Post MVP                                 | Incomplete |
-| Sept. 24    | Post MVP Items                                                | Incomplete |
-| Sept. 25-26 | Completing App / Cleaning Code                                | Incomplete |
-| Sept. 27    | Presentations                                                 | Incomplete |
+| Day         | Deliverable                                                   | Status   |
+| ----------- | ------------------------------------------------------------- | -------- |
+| Sept. 16    | Prompt / Wireframes / Proposal Approval                       | Complete |
+| Sept. 17    | Component Hierarchy / Timeframes / Core Application Structure | Complete |
+| Sept. 20    | Pseudocode / Actual Code                                      | Complete |
+| Sept. 21    | Sept. 20 cont'd / Begin CSS                                   | Complete |
+| Sept. 22    | Initial Clickable Model / CSS Styling                         | Complete |
+| Sept. 23    | Complete MVP / Begin Post MVP                                 | Complete |
+| Sept. 24    | Post MVP Items                                                | Complete |
+| Sept. 25-26 | Completing App / Cleaning Code                                | Complete |
+| Sept. 27    | Presentations                                                 | Complete |
 
 ## Timeframes
 
@@ -92,8 +92,13 @@ This app will allow the user to upload their favorite Pokémon cards to a virtua
 | Responsive App              |    H     |      2hrs      |      1hr      |     1hr     |
 | --POST MVP BELOW--          |   ---    |      ----      |     ----      |    ----     |
 | Pagination for Homepage     |    M     |      3hrs      |     5hrs      |    5hrs     |
-| Confirmation Delete Modal   |    M     |      2hrs      |     2hrs      |    2hrs     |
-| Total                       |          |     43hrs      |      --       |     --      |
+| CSS Style Pagination        |    M     |      1hr       |      1hr      |     1hr     |
+| Confirm Delete Modal        |    M     |      2hrs      |     2hrs      |    2hrs     |
+| CSS Style Delete Modal      |    M     |      1hr       |      1hr      |     1hr     |
+| Search Bar/Component        |    M     |      3hrs      |     4hrs      |    4hrs     |
+| CSS Style Search            |    M     |      1hr       |     .5hrs     |    .5hrs    |
+| Logic for Uploading Images  |    M     |      2hrs      |     3hrs      |    3hrs     |
+| Total                       |          |     51hrs      |     52hrs     |    52hrs    |
 
 ## Dependencies:
 
@@ -101,14 +106,5 @@ This app will allow the user to upload their favorite Pokémon cards to a virtua
 - [axios](https://www.npmjs.com/package/axios)
 - [react-modal](https://www.npmjs.com/package/react-modal)
 - [react-spinners](https://www.npmjs.com/package/react-spinners)
+- [react-paginate](https://www.npmjs.com/package/react-paginate)
 - [Font Awesome](https://fontawesome.com/v5.15/icons?d=gallery&p=2)
-
-## SWOT Analysis
-
-### Strengths:
-
-### Weaknesses:
-
-### Opportunities:
-
-### Threats:
