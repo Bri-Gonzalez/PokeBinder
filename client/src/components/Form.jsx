@@ -1,6 +1,33 @@
 import './Form.css';
+import React from "react";
+import axios from 'axios';
+// import { uploadImage } from "../services";
 
 function Form(props) {
+
+
+  const uploadImage = async (e) => {
+    const files = e.target.files
+    const data = new FormData()
+    data.append("file", files[0])
+    data.append("upload_preset", "pokebinder")
+    const res = await axios.post("https://api.cloudinary.com/v1_1/dfryxohde/image/upload", data);
+    console.log(res.data.url);
+    // return res.data.url;
+    props.setImage(res.data.url);
+    // const file = await res.json()
+    // console.log(file)
+    // setUpload(file.secure_url)
+  };
+
+  // const handleUpload = async (e) => {
+  //   e.preventDefault();
+  //   props.setImage(await uploadImage(e))
+  // }
+
+
+
+
   return (
     <div className="form-container">
       <form onSubmit={props.handleSubmit}>
@@ -97,12 +124,21 @@ function Form(props) {
           onChange={(e) => props.setDescription(e.target.value)}>
         </textarea>
         <br />
+        {/* <label>Upload an image of your card:</label> */}
+        {/* <br /> */}
         <input
+          type="file"
+          name="file"
+          // value={props.image}
+          placeholder="Upload Image"
+          onChange={uploadImage}
+        />
+        {/* <input
           type="text"
           value={props.image}
           placeholder="Paste Card Image Address"
           onChange={(e) => props.setImage(e.target.value)}
-        />
+        /> */}
         <br />
         <div className="btn-div">
           <button className="save-btn">Save</button>
