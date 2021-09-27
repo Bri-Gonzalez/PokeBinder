@@ -1,4 +1,4 @@
-import './Home.css';
+import "./Home.css";
 import AddCard from "./AddCard";
 import Modal from "react-modal";
 import ReactPaginate from "react-paginate";
@@ -119,10 +119,6 @@ function Home() {
             pageCount={pageCount}
             onPageChange={changePage}
             containerClassName={"pagination-btns"}
-            // previousLinkClassName={"prev-btn"}
-            // nextLinkClassName={"next-btn"}
-            // disabledClassName={"disabled"}
-            // activeClassName={"active"}
           />
         </div>
       </div>

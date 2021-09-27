@@ -13,7 +13,6 @@
 .pokemon-card-container {
   width: 600px;
   background-color: #c4efff;
-  /* background-color: #ffea7b; */
   margin: 40px auto;
   margin-bottom: 70px;
   padding: 10px 15px 30px 30px;
@@ -51,8 +50,6 @@
   flex-direction: column;
   justify-content: center;
   text-align: start;
-  /* align-items: center; */
-  /* max-width: 350px; */
 }
 
 .name-type-container {
@@ -73,12 +70,10 @@
   border-radius: 20px;
   padding: 0 7px 0 7px;
   box-shadow: 3px 5px 10px rgb(89, 89, 89);
-  /* font-family: "itim", sans-serif; */
 }
 
 .details p {
   padding: 0 30px;
-  /* font-family: "itim", sans-serif; */
 }
 
 .edit-button {

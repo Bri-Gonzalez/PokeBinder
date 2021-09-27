@@ -4,7 +4,6 @@ import axios from 'axios';
 
 function Form(props) {
 
-
   const uploadImage = async (e) => {
     const files = e.target.files
     const data = new FormData()
@@ -78,8 +77,6 @@ function Form(props) {
         </select>
         <br />
         <input
-          // type="date"
-          // autoComplete="on"
           type="text"
           value={props.date}
           placeholder="Date Collected"
