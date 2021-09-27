@@ -4,6 +4,10 @@ import axios from 'axios';
 
 function Form(props) {
 
+  //UPLOADING
+  //I used a video by Coding Shiksha to help me write the code for uploading images
+  //and tweaked the code to fit my project. 
+  //https://www.youtube.com/watch?v=cc0oMYaduuA
   const uploadImage = async (e) => {
     const files = e.target.files
     const data = new FormData()
