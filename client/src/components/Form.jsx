@@ -4,7 +4,7 @@ import axios from 'axios';
 
 function Form(props) {
 
-  //UPLOADING
+  //------UPLOADING------
   //I used a video by Coding Shiksha to help me write the code for uploading images
   //and tweaked the code to fit my project. 
   //https://www.youtube.com/watch?v=cc0oMYaduuA
@@ -16,6 +16,7 @@ function Form(props) {
     const res = await axios.post("https://api.cloudinary.com/v1_1/dfryxohde/image/upload", data);
     props.setImage(res.data.url);
   };
+    //------UPLOADING------
 
   return (
     <div className="form-container">
