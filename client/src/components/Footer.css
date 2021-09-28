@@ -11,6 +11,7 @@
 .footer img {
   height: 25px;
   margin-top: 10px;
+  padding: 0 8px;
 }
 
 .footer img:hover {

@@ -88,7 +88,10 @@ function Form(props) {
           onChange={(e) => props.setDate(e.target.value)}
         />
         <br />
-        <select name="obtained" id="obtained" onChange={(e) => props.setObtained(e.target.value)}>
+        <select
+          name="obtained"
+          id="obtained"
+          onChange={(e) => props.setObtained(e.target.value)}>
           <option>
             How Card Was Aquired
           </option>

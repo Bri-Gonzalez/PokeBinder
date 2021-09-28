@@ -14,28 +14,29 @@ const config = {
 
 function SearchCard() {
   const [card, setCard] = useState([]);
-  const [cards, setCards] = useState([]);
+  // const [filtered, setFiltered] = useState([]);
   const [search, setSearch] = useState("");
   const [toggle, setToggle] = useState(false);
+
 
   useEffect(() => {
     async function fetchSearch() {
       const res = await axios.get(URL, config);
-      setCard(res.data.records); 
+      setCard(res.data.records);
     }
     fetchSearch();
   }, [toggle])
 
   function handleSubmit(e) {
     e.preventDefault();
-    setCards([]);
-    card.map((card, index)=> {
-      if (card.fields.pokemon.toLowerCase() === search.toLowerCase()) {
-        setCards((prevState) => [...prevState, card])
-      } else {
-        return null;
-        } return index
-      })
+    // setFiltered([]);
+    // card.map((card, index)=> {
+    //   if (card.fields.pokemon.toLowerCase() === search.toLowerCase()) {
+    //     setFiltered((prevState) => [...prevState, card])
+    //   } else {
+    //     return null;
+    //     } return index
+    //   })
     setToggle((prevToggle) => !prevToggle);
   }
 
@@ -49,7 +50,13 @@ function SearchCard() {
         />
         <button className="search-btn">Search</button>
       </form>
-      {cards.map(card => {
+      {card.filter((card) => {
+        if (search === "") {
+          return null;
+        } else if (card.fields.pokemon.toLowerCase().includes(search.toLowerCase())) {
+          return card;
+        } return false;
+      }).map(card => {
             return (
               <div key={card.id} className="searched-card-container">
                 <Link to={`/details/${card.id}`} className="searched-card">
