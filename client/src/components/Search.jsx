@@ -15,6 +15,7 @@ const config = {
 function SearchCard() {
   const [card, setCard] = useState([]);
   const [search, setSearch] = useState("");
+  const [toggle, setToggle] = useState("");
 
   useEffect(() => {
     async function fetchSearch() {
@@ -22,11 +23,16 @@ function SearchCard() {
       setCard(res.data.records);
     }
     fetchSearch();
-  }, [])
+  }, [toggle])
+
+  function handleSubmit(e) {
+    e.preventDefault();
+    setToggle((prevToggle) => !prevToggle);
+  }
 
   return (
     <div className="search-container">
-      <form >
+      <form onSubmit={handleSubmit}>
         <input
           onChange={(e) => setSearch(e.target.value)}
           className="search-input"
