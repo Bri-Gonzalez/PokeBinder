@@ -1,12 +1,12 @@
 import './CardDetails.css';
-import DeleteCard from './DeleteCard';
-import Modal from "react-modal";
-import EditCard from "./EditCard";
+import DeleteCard from "../../components/DeleteCard/DeleteCard";
+import EditCard from "../../components/EditCard/EditCard";
 import { useState, useEffect } from "react";
 import { useParams } from "react-router";
-import { fetchCardDetails } from "../services";
+import { fetchCardDetails } from "../../services/index";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEdit } from "@fortawesome/free-solid-svg-icons";
+import Modal from "react-modal";
 import BeatLoader from "react-spinners/BeatLoader";
 
 //-----------------------------------------------------//

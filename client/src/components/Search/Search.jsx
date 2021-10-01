@@ -15,7 +15,7 @@ const config = {
 function SearchCard() {
   const [card, setCard] = useState([]);
   const [search, setSearch] = useState("");
-  const [toggle, setToggle] = useState("");
+  // const [toggle, setToggle] = useState("");
 
   useEffect(() => {
     async function fetchSearch() {
@@ -23,11 +23,11 @@ function SearchCard() {
       setCard(res.data.records);
     }
     fetchSearch();
-  }, [toggle])
+  }, [])
 
   function handleSubmit(e) {
     e.preventDefault();
-    setToggle((prevToggle) => !prevToggle);
+    // setToggle((prevToggle) => !prevToggle);
   }
 
   return (

@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useState } from "react";
-import Form from "./Form"
+import Form from "../../components/Form/Form"
 
 const airtableBase = process.env.REACT_APP_AIRTABLE_BASE;
 const airtableKey = process.env.REACT_APP_AIRTABLE_KEY;

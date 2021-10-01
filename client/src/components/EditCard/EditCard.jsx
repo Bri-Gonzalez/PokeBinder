@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router";
 import axios from "axios";
-import Form from "./Form";
+import Form from "../../components/Form/Form";
+
 const airtableBase = process.env.REACT_APP_AIRTABLE_BASE;
 const airtableKey = process.env.REACT_APP_AIRTABLE_KEY;
 const URL = `https://api.airtable.com/v0/${airtableBase}/Binder`;

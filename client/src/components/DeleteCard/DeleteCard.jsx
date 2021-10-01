@@ -2,7 +2,7 @@ import './DeleteCard.css';
 import Modal from "react-modal";
 import { useHistory } from "react-router";
 import { useState } from "react";
-import { deleteButton } from "../services";
+import { deleteButton } from "../../services/index";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTrashAlt } from "@fortawesome/free-solid-svg-icons";
 

@@ -1,10 +1,10 @@
 import "./Home.css";
-import AddCard from "./AddCard";
+import AddCard from "../../components/AddCard/AddCard";
 import Modal from "react-modal";
 import ReactPaginate from "react-paginate";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { fetchCardImages } from "../services";
+import { fetchCardImages } from "../../services/index";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlus } from "@fortawesome/free-solid-svg-icons";
 import BeatLoader from "react-spinners/BeatLoader";

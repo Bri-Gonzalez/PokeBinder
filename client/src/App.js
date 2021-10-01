@@ -1,11 +1,11 @@
 import './App.css';
-import Navbar from "./components/Navbar";
-import Home from "./components/Home";
-import EditCard from "./components/EditCard";
-import Search from "./components/Search";
-import CardDetails from "./components/CardDetails";
-import AddCard from "./components/AddCard";
-import Footer from "./components/Footer";
+import Navbar from "./components/Navbar/Navbar";
+import Home from "./components/Home/Home";
+import EditCard from "./components/EditCard/EditCard";
+import Search from "./components/Search/Search";
+import CardDetails from "./components/CardDetails/CardDetails";
+import AddCard from "./components/AddCard/AddCard";
+import Footer from "./components/Footer/Footer";
 import { Route } from "react-router-dom";
 
 function App() {
