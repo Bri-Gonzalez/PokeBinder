@@ -1,16 +1,7 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router";
-import axios from "axios";
 import Form from "../../components/Form/Form";
-
-const airtableBase = process.env.REACT_APP_AIRTABLE_BASE;
-const airtableKey = process.env.REACT_APP_AIRTABLE_KEY;
-const URL = `https://api.airtable.com/v0/${airtableBase}/Binder`;
-const config = {
-  headers: {
-    Authorization: `Bearer ${airtableKey}`,
-  }
-};
+import { fetchCardDetails, updateCard } from "../../services/index";
 
 function EditCard(props) {
   
@@ -26,16 +17,15 @@ function EditCard(props) {
 
   useEffect(() => {
     const fetchToEdit = async () => {
-      const res = await axios.get(`${URL}/${id}`, config);
-      const { fields } = res.data;
-      setCard(fields.card);
-      setPokemon(fields.pokemon);
-      setDate(fields.date);
-      setObtained(fields.obtained);
-      setType(fields.type);
-      setDescription(fields.description);
-      setImage(fields.image);
-      setSet(fields.set);
+      const res = await fetchCardDetails(id);
+      setCard(res.card);
+      setPokemon(res.pokemon);
+      setDate(res.date);
+      setObtained(res.obtained);
+      setType(res.type);
+      setDescription(res.description);
+      setImage(res.image);
+      setSet(res.set);
     };
     fetchToEdit();
     // eslint-disable-next-line
@@ -64,13 +54,14 @@ function EditCard(props) {
         set,
       };
       // eslint-disable-next-line
-      const res = await axios.put(`${URL}/${id}`, { fields }, config);
+      const res = await updateCard(id, fields);
       props.closeModal();
       props.setToggle(prevToggle => !prevToggle);
     } else {
       alert("Please fill out all fields")
     }
   }
+
 
   return (
     <div>

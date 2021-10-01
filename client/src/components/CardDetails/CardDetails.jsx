@@ -62,25 +62,25 @@ function CardDetails() {
   return (
     <div>
       <div className="pokemon-card-container">
-        <h1 className="details-title">{details?.fields?.card}</h1>
+        <h1 className="details-title">{details?.card}</h1>
         <div className="inline-containers">
           <div className="card-image-container">
-            <img src={details?.fields?.image} alt={details?.fields?.card} />
+            <img src={details?.image} alt={details?.card} />
           </div>
           <div className="right-details-container">
             <div className="name-type-container">
               <div className="name">
-                <p>{details?.fields?.pokemon}</p>
+                <p>{details?.pokemon}</p>
               </div>
               <div className="type">
-                <p>{details?.fields?.type}</p>
+                <p>{details?.type}</p>
               </div>
             </div>
             <div className="details">
-              <p><b>Card Set:</b> {details?.fields?.set}</p>
-              <p><b>Date Collected:</b> {details?.fields?.date}</p>
-              <p><b>How card was aquired:</b> {details?.fields?.obtained}</p>
-              <p><b>Description:</b><br />{details?.fields?.description}</p>
+              <p><b>Card Set:</b> {details?.set}</p>
+              <p><b>Date Collected:</b> {details?.date}</p>
+              <p><b>How card was aquired:</b> {details?.obtained}</p>
+              <p><b>Description:</b><br />{details?.description}</p>
             </div>
             <div className="inline-btns">
               <FontAwesomeIcon

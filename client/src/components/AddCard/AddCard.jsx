@@ -1,15 +1,6 @@
-import axios from "axios";
 import { useState } from "react";
 import Form from "../../components/Form/Form"
-
-const airtableBase = process.env.REACT_APP_AIRTABLE_BASE;
-const airtableKey = process.env.REACT_APP_AIRTABLE_KEY;
-const URL = `https://api.airtable.com/v0/${airtableBase}/Binder`;
-const config = {
-  headers: {
-    Authorization: `Bearer ${airtableKey}`,
-  }
-};
+import { newCard } from "../../services/index";
 
 function AddCard(props) {
   
@@ -21,6 +12,7 @@ function AddCard(props) {
   const [description, setDescription] = useState("");
   const [image, setImage] = useState("");
   const [set, setSet] = useState("");
+
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -44,8 +36,7 @@ function AddCard(props) {
         image,
         set,
       };
-      // eslint-disable-next-line
-      const res = await axios.post(URL, { fields }, config);
+      await newCard(fields);
       props.closeModal();
       props.setToggle(prevToggle => !prevToggle);
     } else {
