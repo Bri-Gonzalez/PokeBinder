@@ -9,7 +9,8 @@
 }
 
 .home-container {
-  width: 800px;
+  width: 80vw;
+  max-width: 1500px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -102,9 +103,9 @@
 }
 
 @media only screen and (max-width: 780px) {
-  .home-container {
-    width: 600px;
-    margin: 0 auto;
+  .image {
+    height: 300px;
+    margin: auto;
   }
 }
 

@@ -10,26 +10,46 @@ const config = {
 };
 
 export const fetchCardImages = async () => {
-  const res = await axios.get(URL, config);
-  return res.data.records;
+  try {
+    const res = await axios.get(URL, config);
+    return res.data.records;
+  } catch (error) {
+    throw error
+  }
 }
 
 export const fetchCardDetails = async (id) => {
-  const res = await axios.get(`${URL}/${id}`, config);
-  return res.data.fields;
+  try {
+    const res = await axios.get(`${URL}/${id}`, config);
+    return res.data.fields;
+  } catch (error) {
+    throw error
+  }
 }
 
 export const newCard = async (fields) => {
-   // eslint-disable-next-line
-  const res = await axios.post(URL, { fields }, config);
+  try {
+    // eslint-disable-next-line
+    const res = await axios.post(URL, { fields }, config);
+  } catch (error) {
+    throw error
+  }
 }
 
 export const updateCard = async (id, fields) => {
-  // eslint-disable-next-line
-  const res = await axios.put(`${URL}/${id}`, { fields }, config);
+  try {
+    // eslint-disable-next-line
+    const res = await axios.put(`${URL}/${id}`, { fields }, config);
+  } catch (error) {
+    throw error
+  }
 }
 
 export const deleteButton = async (id) => {
-  const res = await axios.delete(`${URL}/${id}`, config);
-  return res.data;
+  try {
+    const res = await axios.delete(`${URL}/${id}`, config);
+    return res.data;
+  } catch (error) {
+    throw error
+  }
 }

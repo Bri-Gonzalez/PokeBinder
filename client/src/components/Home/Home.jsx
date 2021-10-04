@@ -47,7 +47,7 @@ function Home() {
 
   //----------------PAGINATION----------------//
   
-  const cardsPerPage = 10;
+  const cardsPerPage = 12;
   const pagesVisited = pageNumber * cardsPerPage;
   const pageCount = Math.ceil(cardImages.length / cardsPerPage)
 
