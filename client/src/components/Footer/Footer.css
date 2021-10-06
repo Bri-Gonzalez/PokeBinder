@@ -1,11 +1,9 @@
 .footer {
   border-top: 2px solid black;
-  overflow: hidden;
   margin-top: 10px;
-  position: absolute;
-  left: 0;
-  bottom: 1px;
-  right: 0;
+  width: 100vw;
+  height: 45px;
+  background-color: #fef5e1;
 }
 
 .footer img {

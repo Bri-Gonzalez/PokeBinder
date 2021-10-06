@@ -4,8 +4,7 @@
   min-height: 100vh;
 }
 
-body {
-  min-height: 100vh;
+.app-body {
+  min-height: 89vh;
   background-color: #fef5e1;
-  position: relative;
 }

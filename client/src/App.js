@@ -12,23 +12,24 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      <Route exact path = "/" >
-        <Home />
-      </Route>
-      <Route exact path = "/details/:id">
-        <CardDetails />
-      </Route>
-      <Route path = "/add">
-        <AddCard />
-      </Route>
-      <Route path ="/details/:id/edit">
-        <EditCard />
-      </Route>
-      <Route path ="/search">
-        <Search />
-      </Route>
-      <br />
-      <Footer />
+        <div className="app-body">
+          <Route exact path = "/" >
+            <Home />
+          </Route>
+          <Route exact path = "/details/:id">
+            <CardDetails />
+          </Route>
+          <Route path = "/add">
+            <AddCard />
+          </Route>
+          <Route path ="/details/:id/edit">
+            <EditCard />
+          </Route>
+          <Route path ="/search">
+            <Search />
+          </Route>
+        </div>
+        <Footer />
     </div>
   );
 }
