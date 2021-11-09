@@ -1,6 +1,6 @@
 # Project Overview
 
-## [PokéBinder](https://flamboyant-goldwasser-1c3004.netlify.app/)
+## [PokéBinder](https://pokebinder.netlify.app/)
 
 ## Project Description
 
