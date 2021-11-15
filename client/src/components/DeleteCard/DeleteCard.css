@@ -4,13 +4,12 @@
 }
 
 .delete-button:hover {
+  cursor: pointer;
   transform: scale(1.2);
   transition-duration: 0.3s;
-  cursor: pointer;
 }
 
 .confirm-delete {
-  /* color: white; */
   color: black;
   font-family: "itim", sans-serif;
   font-size: 30px;
@@ -18,19 +17,17 @@
 }
 
 .confirm-border {
-  /* border-top: 1px solid white; */
+  align-items: center;
   border-top: 1px solid black;
-  padding: 15px;
-  width: 250px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  padding: 15px;
   text-align: center;
+  width: 250px;
 }
 
 .confirm-message {
-  /* color: white; */
   color: black;
   font-family: "itim", sans-serif;
   font-size: 21px;
@@ -39,23 +36,23 @@
 }
 
 .inline-delete-btns {
+  align-items: center;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
 .no-btn,
 .yes-btn {
-  margin: 0 8px;
-  width: 55px;
-  height: 35px;
+  align-items: center;
+  border-radius: 5px;
+  display: flex;
   font-family: "itim", sans-serif;
   font-size: 22px;
-  border-radius: 5px;
-  text-align: center;
-  display: flex;
+  height: 35px;
   justify-content: center;
-  align-items: center;
+  margin: 0 8px;
+  text-align: center;
+  width: 55px;
 }
 
 .no-btn:hover,
@@ -65,21 +62,19 @@
 
 .no-btn {
   background-color: transparent;
-  /* border: 1px solid white; */
   border: 2px solid black;
-  /* color: white; */
   color: black;
 }
 
 .yes-btn {
   background-color: #ff4e4a;
-  color: white;
   border: none;
+  color: white;
 }
 
 @media only screen and (max-width: 320px) {
   .confirm-border {
-    width: 200px;
     padding: 10px;
+    width: 200px;
   }
 }

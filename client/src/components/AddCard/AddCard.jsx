@@ -1,30 +1,28 @@
-import { useState } from "react";
-import Form from "../../components/Form/Form"
-import { newCard } from "../../services/index";
+import { useState } from 'react'
+import Form from '../../components/Form/Form'
+import { newCard } from '../../services/index'
 
 function AddCard(props) {
-  
-  const [card, setCard] = useState("");
-  const [pokemon, setPokemon] = useState("");
-  const [date, setDate] = useState("");
-  const [obtained, setObtained] = useState("");
-  const [type, setType] = useState("");
-  const [description, setDescription] = useState("");
-  const [image, setImage] = useState("");
-  const [set, setSet] = useState("");
-
+  const [card, setCard] = useState('')
+  const [pokemon, setPokemon] = useState('')
+  const [date, setDate] = useState('')
+  const [obtained, setObtained] = useState('')
+  const [type, setType] = useState('')
+  const [description, setDescription] = useState('')
+  const [image, setImage] = useState('')
+  const [set, setSet] = useState('')
 
   const handleSubmit = async (e) => {
-    e.preventDefault();
+    e.preventDefault()
     if (
-      card !== "" &&
-      pokemon !== "" &&
-      date !== "" &&
-      obtained !== "" &&
-      type !== "" &&
-      description !== "" &&
-      image !== "" &&
-      set !== ""
+      card !== '' &&
+      pokemon !== '' &&
+      date !== '' &&
+      obtained !== '' &&
+      type !== '' &&
+      description !== '' &&
+      image !== '' &&
+      set !== ''
     ) {
       const fields = {
         card,
@@ -35,15 +33,14 @@ function AddCard(props) {
         description,
         image,
         set,
-      };
-      await newCard(fields);
-      props.closeModal();
-      props.setToggle(prevToggle => !prevToggle);
+      }
+      await newCard(fields)
+      props.closeModal()
+      props.setToggle((prevToggle) => !prevToggle)
     } else {
-      alert("Please fill out all fields")
+      alert('Please fill out all fields')
     }
   }
-
 
   return (
     <div>
@@ -70,4 +67,4 @@ function AddCard(props) {
   )
 }
 
-export default AddCard;
+export default AddCard

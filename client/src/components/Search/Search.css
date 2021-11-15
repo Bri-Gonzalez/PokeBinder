@@ -1,38 +1,36 @@
 .search-container {
-  width: 800px;
+  align-items: center;
+  border-radius: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   margin: 0 auto;
-  border-radius: 20px;
   padding: 10px;
+  width: 800px;
 }
 
 .search-input {
-  width: 40vw;
-  max-width: 550px;
-  padding: 7px 15px;
-  margin: 10px 0 20px 0;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+  background-color: transparent;
+  border: 2px solid black;
+  border-radius: 5px;
   box-sizing: border-box;
   font-family: "itim", sans-serif;
   font-size: 15px;
-  border-radius: 5px;
-  border: 2px solid black;
-  background-color: transparent;
+  margin: 10px 0 20px 0;
+  max-width: 550px;
+  padding: 7px 15px;
+  width: 40vw;
 }
 
 .searched-card-container {
-  border-radius: 10px;
-  margin: 15px;
-  padding: 5px;
-  display: inline-flex;
-  justify-content: center;
   align-items: center;
   background-color: white;
+  border-radius: 10px;
   box-shadow: 3px 5px 10px rgb(89, 89, 89);
+  display: inline-flex;
+  justify-content: center;
+  margin: 15px;
+  padding: 5px;
 }
 
 .searched-card-container:hover {
@@ -42,10 +40,10 @@
 }
 
 .searched-card {
-  margin: auto;
+  align-items: center;
   display: flex;
   justify-content: center;
-  align-items: center;
+  margin: auto;
 }
 
 .searched-card-image {
@@ -73,9 +71,9 @@
   }
 
   .search-input {
-    width: 300px;
-    padding: 10px 15px;
     font-size: 17px;
+    padding: 10px 15px;
+    width: 300px;
   }
 }
 
@@ -89,8 +87,8 @@
   }
 
   .search-input {
-    width: 250px;
-    padding: 10px 15px;
     font-size: 17px;
+    padding: 10px 15px;
+    width: 250px;
   }
 }

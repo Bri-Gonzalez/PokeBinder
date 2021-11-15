@@ -1,23 +1,23 @@
 .details-title {
   background-color: #ff4e4a;
+  border-radius: 15px;
   color: white;
-  width: 350px;
   margin: 20px auto;
   margin-bottom: 25px;
-  border-radius: 15px;
+  padding: 8px;
   font-family: "itim", sans-serif;
   font-size: 25px;
-  padding: 8px;
+  width: 350px;
 }
 
 .pokemon-card-container {
-  width: 600px;
   background-color: #c4efff;
+  border-radius: 20px;
+  box-shadow: 3px 5px 10px rgb(89, 89, 89);
   margin: 40px auto;
   margin-bottom: 70px;
   padding: 10px 15px 30px 30px;
-  border-radius: 20px;
-  box-shadow: 3px 5px 10px rgb(89, 89, 89);
+  width: 600px;
 }
 
 .inline-containers {
@@ -25,51 +25,51 @@
 }
 
 .card-image-container {
-  margin: auto;
-  display: flex;
-  justify-content: center;
   align-items: center;
   background-color: white;
-  border-radius: 10px;
   box-shadow: 3px 5px 10px rgb(89, 89, 89);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  margin: auto;
 }
 
 .card-image-container img {
-  max-height: 300px;
-  max-width: 230px;
-  margin: auto;
+  align-items: center;
   display: flex;
   justify-content: center;
-  align-items: center;
+  margin: auto;
+  max-height: 300px;
+  max-width: 230px;
   padding: 10px;
 }
 
 .right-details-container {
-  margin: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin: auto;
   text-align: start;
 }
 
 .name-type-container {
+  align-items: center;
   display: inline-flex;
   justify-content: center;
-  align-items: center;
 }
 
 .name {
-  margin: 5px 5px 0 5px;
   font-family: "Boogaloo", sans-serif;
   font-size: 25px;
+  margin: 5px 5px 0 5px;
 }
 
 .type {
-  margin: 5px 5px 0 5px;
   background-color: rgb(238, 237, 237);
   border-radius: 20px;
-  padding: 0 7px 0 7px;
   box-shadow: 3px 5px 10px rgb(89, 89, 89);
+  margin: 5px 5px 0 5px;
+  padding: 0 7px 0 7px;
 }
 
 .details p {
@@ -82,22 +82,22 @@
 }
 
 .edit-button:hover {
+  cursor: pointer;
   transform: scale(1.2);
   transition-duration: 0.3s;
-  cursor: pointer;
 }
 
 .inline-btns {
+  align-items: center;
   display: flex;
   justify-content: right;
-  align-items: center;
   margin: 20px 20px 0 0;
 }
 
 @media only screen and (max-width: 600px) {
   .pokemon-card-container {
-    width: 300px;
     padding: 20px;
+    width: 300px;
   }
 
   .details-title {
@@ -112,8 +112,8 @@
 
 @media only screen and (max-width: 320px) {
   .pokemon-card-container {
-    width: 260px;
     padding: 8px;
+    width: 260px;
   }
 
   .details-title {
