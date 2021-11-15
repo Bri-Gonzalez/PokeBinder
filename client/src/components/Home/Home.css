@@ -8,6 +8,29 @@
   width: 350px;
 }
 
+.plus-btn-container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.plus-button {
+  color: black;
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 50%;
+  padding: 12px;
+}
+
+.plus-button:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+  transition-duration: 0.3s;
+}
+
+.beat-loader {
+  margin: 60px;
+}
+
 .home-container {
   align-items: center;
   border-radius: 20px;
@@ -55,25 +78,6 @@
   display: flex;
   justify-content: center;
   margin: auto;
-}
-
-.plus-btn-container {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-}
-
-.plus-button {
-  color: black;
-  border: 2px solid rgb(0, 0, 0);
-  border-radius: 50%;
-  padding: 12px;
-}
-
-.plus-button:hover {
-  cursor: pointer;
-  transform: scale(1.2);
-  transition-duration: 0.3s;
 }
 
 .pagination-btns {

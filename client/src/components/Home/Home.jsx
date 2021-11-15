@@ -30,7 +30,7 @@ Modal.setAppElement('#root')
 function Home() {
   const [cardImages, setCardImages] = useState([])
   const [modalIsOpen, setIsOpen] = useState(false)
-  const [loading, setLoading] = useState(true)
+  const [isLoaded, setLoaded] = useState(false)
   const [toggle, setToggle] = useState(false)
   const [pageNumber, setPageNumber] = useState(0)
 
@@ -39,7 +39,7 @@ function Home() {
   useEffect(() => {
     const getCardImages = async () => {
       setCardImages(await fetchCardImages())
-      setLoading(false)
+      setLoaded(true)
     }
     getCardImages()
   }, [toggle])
@@ -82,9 +82,9 @@ function Home() {
 
   //----------------LOADING----------------//
 
-  if (loading) {
-    return <BeatLoader />
-  }
+  // if (loading) {
+  //   return <BeatLoader />
+  // }
 
   //----------------RETURN----------------//
 
@@ -106,19 +106,25 @@ function Home() {
           <AddCard closeModal={closeModal} setToggle={setToggle} />
         </Modal>
       </div>
-      <div className='home-container'>
-        <div className='card-container'>
-          {displayCards}
-          <br />
-          <ReactPaginate
-            previousLabel={'<'}
-            nextLabel={'>'}
-            pageCount={pageCount}
-            onPageChange={changePage}
-            containerClassName={'pagination-btns'}
-          />
+      {!isLoaded ? (
+        <div className='beat-loader'>
+          <BeatLoader color='#ff4e4a' />
         </div>
-      </div>
+      ) : (
+        <div className='home-container'>
+          <div className='card-container'>
+            {displayCards}
+            <br />
+            <ReactPaginate
+              previousLabel={'<'}
+              nextLabel={'>'}
+              pageCount={pageCount}
+              onPageChange={changePage}
+              containerClassName={'pagination-btns'}
+            />
+          </div>
+        </div>
+      )}
     </div>
   )
 }

@@ -32,7 +32,7 @@ Modal.setAppElement('#root')
 function CardDetails() {
   const [details, setDetails] = useState({})
   const { id } = useParams()
-  const [loading, setLoading] = useState(true)
+  const [isLoaded, setLoaded] = useState(false)
   const [modalIsOpen, setIsOpen] = useState(false)
   const [toggle, setToggle] = useState(false)
 
@@ -47,68 +47,70 @@ function CardDetails() {
   useEffect(() => {
     const getCard = async () => {
       setDetails(await fetchCardDetails(id))
-      setLoading(false)
+      setLoaded(true)
     }
     getCard()
     // eslint-disable-next-line
   }, [toggle])
 
-  if (loading) {
-    return <BeatLoader />
-  }
-
   return (
     <div>
-      <div className='pokemon-card-container'>
-        <h1 className='details-title'>{details?.card}</h1>
-        <div className='inline-containers'>
-          <div className='card-image-container'>
-            <img src={details?.image} alt={details?.card} />
-          </div>
-          <div className='right-details-container'>
-            <div className='name-type-container'>
-              <div className='name'>
-                <p>{details?.pokemon}</p>
-              </div>
-              <div className='type'>
-                <p>{details?.type}</p>
-              </div>
+      {!isLoaded ? (
+        <div className='beat-loader'>
+          <BeatLoader color='#ff4e4a' />
+        </div>
+      ) : (
+        <div className='pokemon-card-container'>
+          <h1 className='details-title'>{details?.card}</h1>
+          <div className='inline-containers'>
+            <div className='card-image-container'>
+              <img src={details?.image} alt={details?.card} />
             </div>
-            <div className='details'>
-              <p>
-                <b>Card Set:</b> {details?.set}
-              </p>
-              <p>
-                <b>Date Collected:</b> {details?.date}
-              </p>
-              <p>
-                <b>How card was aquired:</b> {details?.obtained}
-              </p>
-              <p>
-                <b>Description:</b>
-                <br />
-                {details?.description}
-              </p>
-            </div>
-            <div className='inline-btns'>
-              <FontAwesomeIcon
-                onClick={openModal}
-                icon={faEdit}
-                size='lg'
-                className='edit-button'
-              />
-              <Modal
-                isOpen={modalIsOpen}
-                onRequestClose={closeModal}
-                style={customStyles}
-              >
-                <EditCard closeModal={closeModal} setToggle={setToggle} />
-              </Modal>
-              <DeleteCard id={id} />
+            <div className='right-details-container'>
+              <div className='name-type-container'>
+                <div className='name'>
+                  <p>{details?.pokemon}</p>
+                </div>
+                <div className='type'>
+                  <p>{details?.type}</p>
+                </div>
+              </div>
+              <div className='details'>
+                <p>
+                  <b>Card Set:</b> {details?.set}
+                </p>
+                <p>
+                  <b>Date Collected:</b> {details?.date}
+                </p>
+                <p>
+                  <b>How card was aquired:</b> {details?.obtained}
+                </p>
+                <p>
+                  <b>Description:</b>
+                  <br />
+                  {details?.description}
+                </p>
+              </div>
+              <div className='inline-btns'>
+                <FontAwesomeIcon
+                  onClick={openModal}
+                  icon={faEdit}
+                  size='lg'
+                  className='edit-button'
+                />
+                <Modal
+                  isOpen={modalIsOpen}
+                  onRequestClose={closeModal}
+                  style={customStyles}
+                >
+                  <EditCard closeModal={closeModal} setToggle={setToggle} />
+                </Modal>
+                <DeleteCard id={id} />
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      )}
     </div>
   )
 }
