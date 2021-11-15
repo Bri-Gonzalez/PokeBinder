@@ -80,12 +80,6 @@ function Home() {
     setIsOpen(false)
   }
 
-  //----------------LOADING----------------//
-
-  // if (loading) {
-  //   return <BeatLoader />
-  // }
-
   //----------------RETURN----------------//
 
   return (

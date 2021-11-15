@@ -8,6 +8,7 @@
   color: white;
   text-align: center;
   text-decoration: none;
+  transition: 350ms;
 }
 
 .top-nav a:hover {
